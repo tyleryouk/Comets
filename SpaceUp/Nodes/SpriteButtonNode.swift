@@ -1,0 +1,35 @@
+
+
+import SpriteKit
+
+class SpriteButtonNode: ButtonNode {
+  private var textures = [ButtonState: SKTexture]()
+  
+  var state: ButtonState = .Normal {
+    didSet {
+      if let texture = textures[state] {
+        self.texture = texture
+      }
+    }
+  }
+  
+  // MARK: - Init
+  convenience init(imageNamed imageName: String) {
+    self.init(texture: SKTexture(imageNamed: imageName))
+  }
+
+  init(texture: SKTexture?) {
+    super.init(texture: texture, color: UIColor.clearColor(), size: texture?.size() ?? CGSizeZero)
+    
+    setTexture(texture ?? SKTexture(), forState: .Normal)
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+
+  // MARK: - State
+  func setTexture(texture: SKTexture, forState state: ButtonState) {
+    textures[state] = texture
+  }
+}
