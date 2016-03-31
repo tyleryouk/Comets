@@ -2,18 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "StartLogo.png"
+      "filename" : "StartLogo.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "StartLogo@2x.png"
+      "filename" : "StartLogo@2x.png",
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "StartLogo@3x.png"
+      "filename" : "StartLogo@3x.png",
+      "scale" : "3x"
     }
   ],
   "info" : {

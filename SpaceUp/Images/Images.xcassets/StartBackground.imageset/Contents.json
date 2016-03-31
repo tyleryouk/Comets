@@ -2,18 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "StartBackground.jpg"
+      "filename" : "StartBackground.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "StartBackground@2x.jpg"
+      "filename" : "StartBackground@2x.jpg",
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "StartBackground@3x.jpg"
+      "filename" : "StartBackground@3x.jpg",
+      "scale" : "3x"
     }
   ],
   "info" : {
