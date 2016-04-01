@@ -143,6 +143,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		36FE001B1CACD3D8005F6059 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FE001C1CACD47E005F6059 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		36E1D77B1C0D0AC100A1EBB8 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		36E1D77D1C0D0BBE00A1EBB8 /* Santa Express.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Santa Express.entitlements"; sourceTree = "<group>"; };
@@ -635,6 +657,8 @@
 				EB0211E41B1DCF990087B2E6 /* Sources */,
 				EB0211E51B1DCF990087B2E6 /* Frameworks */,
 				EB0211E61B1DCF990087B2E6 /* Resources */,
+				36FE001B1CACD3D8005F6059 /* Embed Frameworks */,
+				36FE001C1CACD47E005F6059 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -986,6 +1010,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SpaceUp/Santa Express.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tyler Youk (REFGKC7YRH)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1008,6 +1033,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SpaceUp/Santa Express.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tyler Youk (4H2CPZLR9S)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

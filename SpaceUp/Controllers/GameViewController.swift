@@ -2,14 +2,17 @@ import SpriteKit
 import GameKit
 import StoreKit
 import CoreMotion
+import Haneke
 
 // TODO: Refactor, too many responsbilities atm
 class GameViewController: UIViewController, GKGameCenterControllerDelegate, GameCenterManagerDelegate, GameSceneDelegate, StartSceneDelegate, SKProductsRequestDelegate, MotionDataSource {
   // MARK: - Immutable vars
+    
   let gameCenterManager = GameCenterManager()
   let gameData = GameData.dataFromArchive()
   let motionManager = CMMotionManager()
   
+
   // MARK: - Vars
 //  private var interstitialAdView: InterstitialAdView?
 //  private var numberOfRetriesSinceLastAd: UInt = 0

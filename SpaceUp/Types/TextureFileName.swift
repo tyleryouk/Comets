@@ -1,6 +1,7 @@
 
 
 import Foundation
+import Haneke
 
 struct TextureAtlasFileName {
   static let Environment = "Environment"
