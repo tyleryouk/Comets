@@ -2,7 +2,7 @@ import SpriteKit
 import GameKit
 import StoreKit
 import CoreMotion
-import Haneke
+//import Haneke
 
 // TODO: Refactor, too many responsbilities atm
 class GameViewController: UIViewController, GKGameCenterControllerDelegate, GameCenterManagerDelegate, GameSceneDelegate, StartSceneDelegate, SKProductsRequestDelegate, MotionDataSource {
