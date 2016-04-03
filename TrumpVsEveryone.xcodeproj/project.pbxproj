@@ -27,6 +27,17 @@
 		485426D21CB0DCE0004E95F3 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 485426CF1CB0DCE0004E95F3 /* launch.jpg */; };
 		485426D31CB0DCE0004E95F3 /* launch@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 485426D01CB0DCE0004E95F3 /* launch@2x.jpg */; };
 		485426D41CB0DCE0004E95F3 /* launch@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 485426D11CB0DCE0004E95F3 /* launch@3x.jpg */; };
+		4854270D1CB0E24D004E95F3 /* EngineSpark.sks in Resources */ = {isa = PBXBuildFile; fileRef = 485427021CB0E24C004E95F3 /* EngineSpark.sks */; };
+		4854270E1CB0E24D004E95F3 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 485427031CB0E24C004E95F3 /* Explosion.sks */; };
+		4854270F1CB0E24D004E95F3 /* ExplosionGlow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 485427041CB0E24C004E95F3 /* ExplosionGlow.sks */; };
+		485427101CB0E24D004E95F3 /* Propel.sks in Resources */ = {isa = PBXBuildFile; fileRef = 485427051CB0E24D004E95F3 /* Propel.sks */; };
+		485427111CB0E24D004E95F3 /* ShieldGlow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 485427061CB0E24D004E95F3 /* ShieldGlow.sks */; };
+		485427121CB0E24D004E95F3 /* Spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 485427071CB0E24D004E95F3 /* Spark.png */; };
+		485427131CB0E24D004E95F3 /* Sphere.png in Resources */ = {isa = PBXBuildFile; fileRef = 485427081CB0E24D004E95F3 /* Sphere.png */; };
+		485427141CB0E24D004E95F3 /* SphereSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 485427091CB0E24D004E95F3 /* SphereSmall.png */; };
+		485427151CB0E24D004E95F3 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4854270A1CB0E24D004E95F3 /* Star.png */; };
+		485427161CB0E24D004E95F3 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4854270B1CB0E24D004E95F3 /* StarField.sks */; };
+		485427171CB0E24D004E95F3 /* Trail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4854270C1CB0E24D004E95F3 /* Trail.sks */; };
 		EB0211EE1B1DCF990087B2E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0211ED1B1DCF990087B2E6 /* AppDelegate.swift */; };
 		EB0211F71B1DCF9A0087B2E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0211F51B1DCF9A0087B2E6 /* Main.storyboard */; };
 		EB0211FC1B1DCF9A0087B2E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0211FA1B1DCF9A0087B2E6 /* LaunchScreen.xib */; };
@@ -192,6 +203,17 @@
 		485426CF1CB0DCE0004E95F3 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
 		485426D01CB0DCE0004E95F3 /* launch@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "launch@2x.jpg"; sourceTree = "<group>"; };
 		485426D11CB0DCE0004E95F3 /* launch@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "launch@3x.jpg"; sourceTree = "<group>"; };
+		485427021CB0E24C004E95F3 /* EngineSpark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EngineSpark.sks; sourceTree = "<group>"; };
+		485427031CB0E24C004E95F3 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		485427041CB0E24C004E95F3 /* ExplosionGlow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ExplosionGlow.sks; sourceTree = "<group>"; };
+		485427051CB0E24D004E95F3 /* Propel.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Propel.sks; sourceTree = "<group>"; };
+		485427061CB0E24D004E95F3 /* ShieldGlow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShieldGlow.sks; sourceTree = "<group>"; };
+		485427071CB0E24D004E95F3 /* Spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spark.png; sourceTree = "<group>"; };
+		485427081CB0E24D004E95F3 /* Sphere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sphere.png; sourceTree = "<group>"; };
+		485427091CB0E24D004E95F3 /* SphereSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SphereSmall.png; sourceTree = "<group>"; };
+		4854270A1CB0E24D004E95F3 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		4854270B1CB0E24D004E95F3 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
+		4854270C1CB0E24D004E95F3 /* Trail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Trail.sks; sourceTree = "<group>"; };
 		EB0211E81B1DCF990087B2E6 /* TrumpVsEveryone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpVsEveryone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0211EC1B1DCF990087B2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB0211ED1B1DCF990087B2E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -369,6 +391,24 @@
 			path = Images/LaunchImages;
 			sourceTree = "<group>";
 		};
+		485427011CB0E24C004E95F3 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				485427021CB0E24C004E95F3 /* EngineSpark.sks */,
+				485427031CB0E24C004E95F3 /* Explosion.sks */,
+				485427041CB0E24C004E95F3 /* ExplosionGlow.sks */,
+				485427051CB0E24D004E95F3 /* Propel.sks */,
+				485427061CB0E24D004E95F3 /* ShieldGlow.sks */,
+				485427071CB0E24D004E95F3 /* Spark.png */,
+				485427081CB0E24D004E95F3 /* Sphere.png */,
+				485427091CB0E24D004E95F3 /* SphereSmall.png */,
+				4854270A1CB0E24D004E95F3 /* Star.png */,
+				4854270B1CB0E24D004E95F3 /* StarField.sks */,
+				4854270C1CB0E24D004E95F3 /* Trail.sks */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
 		EB0211DF1B1DCF990087B2E6 = {
 			isa = PBXGroup;
 			children = (
@@ -395,7 +435,7 @@
 				EB0211ED1B1DCF990087B2E6 /* AppDelegate.swift */,
 				EB0212541B1DD42A0087B2E6 /* Configs */,
 				EB0212121B1DD1300087B2E6 /* Controllers */,
-				EB0565381B2479BF00A76297 /* Effects */,
+				485427011CB0E24C004E95F3 /* Effects */,
 				EB0212231B1DD3830087B2E6 /* Extensions */,
 				EBD100D71B2715EB00D3680B /* Fonts */,
 				EB0212791B1DEBD90087B2E6 /* Helpers */,
@@ -638,13 +678,6 @@
 			name = Lib;
 			sourceTree = "<group>";
 		};
-		EB0565381B2479BF00A76297 /* Effects */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Effects;
-			sourceTree = "<group>";
-		};
 		EBB1EC9D1B23CCEC00768015 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -778,19 +811,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				485426D21CB0DCE0004E95F3 /* launch.jpg in Resources */,
+				485427151CB0E24D004E95F3 /* Star.png in Resources */,
+				4854270D1CB0E24D004E95F3 /* EngineSpark.sks in Resources */,
 				EB5DA0A21B5098690064B5F0 /* GameResult.caf in Resources */,
 				EBD100D51B27077800D3680B /* Character.atlas in Resources */,
+				485427161CB0E24D004E95F3 /* StarField.sks in Resources */,
+				485427171CB0E24D004E95F3 /* Trail.sks in Resources */,
 				EBD100DC1B27221500D3680B /* FontAwesome.otf in Resources */,
+				4854270E1CB0E24D004E95F3 /* Explosion.sks in Resources */,
 				EB5DA0A01B5098690064B5F0 /* Explosion.caf in Resources */,
+				485427121CB0E24D004E95F3 /* Spark.png in Resources */,
 				EB5DA0A51B5098690064B5F0 /* PopHigh.caf in Resources */,
 				EB5DA0A11B5098690064B5F0 /* GameMusic.mp3 in Resources */,
 				EB5DA0A61B5098690064B5F0 /* Spaceship.caf in Resources */,
+				485427101CB0E24D004E95F3 /* Propel.sks in Resources */,
+				4854270F1CB0E24D004E95F3 /* ExplosionGlow.sks in Resources */,
 				EB0212A81B1F1BC60087B2E6 /* Images.xcassets in Resources */,
 				EBCA80651B2D484000CC00E2 /* UserInterface.atlas in Resources */,
 				EB5DA0A41B5098690064B5F0 /* MeowBonus.caf in Resources */,
+				485427131CB0E24D004E95F3 /* Sphere.png in Resources */,
+				485427111CB0E24D004E95F3 /* ShieldGlow.sks in Resources */,
 				EB0211FC1B1DCF9A0087B2E6 /* LaunchScreen.xib in Resources */,
 				EB5DA09F1B5098690064B5F0 /* ButtonTap.caf in Resources */,
 				EB5DA0A31B5098690064B5F0 /* ItemCollected.caf in Resources */,
+				485427141CB0E24D004E95F3 /* SphereSmall.png in Resources */,
 				EBD100D91B2715EB00D3680B /* Righteous-Regular.ttf in Resources */,
 				485426D41CB0DCE0004E95F3 /* launch@3x.jpg in Resources */,
 				EBC2EB8C1B358E9D00CEA20B /* Environment.atlas in Resources */,
