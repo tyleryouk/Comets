@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36031C4C1CB0C9B100402873 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36031C4B1CB0C9B100402873 /* AdSupport.framework */; };
+		36031C4E1CB0C9B600402873 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36031C4D1CB0C9B600402873 /* AudioToolbox.framework */; };
+		36031C501CB0C9C800402873 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36031C4F1CB0C9C800402873 /* CoreGraphics.framework */; };
+		36031C521CB0C9CE00402873 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36031C511CB0C9CE00402873 /* CoreMedia.framework */; };
+		36AB55C51CB0CA440051F2F5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AB55C31CB0CA440051F2F5 /* EventKit.framework */; };
+		36AB55C61CB0CA440051F2F5 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AB55C41CB0CA440051F2F5 /* EventKitUI.framework */; };
+		36AB55C81CB0CA4A0051F2F5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AB55C71CB0CA4A0051F2F5 /* MediaPlayer.framework */; };
+		36AB55CA1CB0CA500051F2F5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AB55C91CB0CA500051F2F5 /* MessageUI.framework */; };
+		36AB55CC1CB0CA5D0051F2F5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AB55CB1CB0CA5D0051F2F5 /* SystemConfiguration.framework */; };
+		36AB55D01CB0CABC0051F2F5 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AB55CF1CB0CABC0051F2F5 /* GoogleMobileAds.framework */; };
 		36E1D77C1C0D0AC100A1EBB8 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E1D77B1C0D0AC100A1EBB8 /* GameKit.framework */; };
 		36FE00001CACCA1A005F6059 /* Propel.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36FEFFF51CACCA1A005F6059 /* Propel.sks */; };
 		36FE00011CACCA1A005F6059 /* ShieldGlow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36FEFFF61CACCA1A005F6059 /* ShieldGlow.sks */; };
@@ -166,6 +176,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		36031C4B1CB0C9B100402873 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		36031C4D1CB0C9B600402873 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		36031C4F1CB0C9C800402873 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		36031C511CB0C9CE00402873 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		36AB55C31CB0CA440051F2F5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		36AB55C41CB0CA440051F2F5 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		36AB55C71CB0CA4A0051F2F5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		36AB55C91CB0CA500051F2F5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		36AB55CB1CB0CA5D0051F2F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		36AB55CF1CB0CABC0051F2F5 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.7.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		36E1D77B1C0D0AC100A1EBB8 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		36E1D77D1C0D0BBE00A1EBB8 /* Santa Express.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Santa Express.entitlements"; sourceTree = "<group>"; };
 		36FEFFF21CACCA1A005F6059 /* EngineSpark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = EngineSpark.sks; path = "../../../../../../Downloads/Trump-master/SpaceUp/Effects/EngineSpark.sks"; sourceTree = "<group>"; };
@@ -302,8 +322,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36AB55CC1CB0CA5D0051F2F5 /* SystemConfiguration.framework in Frameworks */,
 				EBAE01C01BDCEE5A000759AF /* StoreKit.framework in Frameworks */,
+				36AB55D01CB0CABC0051F2F5 /* GoogleMobileAds.framework in Frameworks */,
+				36AB55CA1CB0CA500051F2F5 /* MessageUI.framework in Frameworks */,
+				36AB55C81CB0CA4A0051F2F5 /* MediaPlayer.framework in Frameworks */,
+				36AB55C51CB0CA440051F2F5 /* EventKit.framework in Frameworks */,
+				36AB55C61CB0CA440051F2F5 /* EventKitUI.framework in Frameworks */,
+				36031C521CB0C9CE00402873 /* CoreMedia.framework in Frameworks */,
+				36031C501CB0C9C800402873 /* CoreGraphics.framework in Frameworks */,
 				EB661F921B4939CE00B6BA56 /* AVFoundation.framework in Frameworks */,
+				36031C4E1CB0C9B600402873 /* AudioToolbox.framework in Frameworks */,
+				36031C4C1CB0C9B100402873 /* AdSupport.framework in Frameworks */,
 				36E1D77C1C0D0AC100A1EBB8 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +351,16 @@
 		36E275A21BF3FBE400E28ED2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36AB55CF1CB0CABC0051F2F5 /* GoogleMobileAds.framework */,
+				36AB55CB1CB0CA5D0051F2F5 /* SystemConfiguration.framework */,
+				36AB55C91CB0CA500051F2F5 /* MessageUI.framework */,
+				36AB55C71CB0CA4A0051F2F5 /* MediaPlayer.framework */,
+				36AB55C31CB0CA440051F2F5 /* EventKit.framework */,
+				36AB55C41CB0CA440051F2F5 /* EventKitUI.framework */,
+				36031C511CB0C9CE00402873 /* CoreMedia.framework */,
+				36031C4F1CB0C9C800402873 /* CoreGraphics.framework */,
+				36031C4D1CB0C9B600402873 /* AudioToolbox.framework */,
+				36031C4B1CB0C9B100402873 /* AdSupport.framework */,
 				36E1D77B1C0D0AC100A1EBB8 /* GameKit.framework */,
 				EB661F911B4939CE00B6BA56 /* AVFoundation.framework */,
 				EBAE01BF1BDCEE5A000759AF /* StoreKit.framework */,
@@ -1015,6 +1055,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.5.2",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.7.0",
 				);
 				INFOPLIST_FILE = SpaceUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1038,6 +1079,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.5.2",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.7.0",
 				);
 				INFOPLIST_FILE = SpaceUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
