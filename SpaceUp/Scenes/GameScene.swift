@@ -26,6 +26,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     var textureAtlases: [SKTextureAtlas]?
     var tip: TapTipNode?
     var tip2: TapTipNode2?
+    var tip3: TapTipNode3?
     var gameStarted = false
     var godMode = false
     var gameOverCount:Int = 0
@@ -106,19 +107,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
       addChild(tip!)
       
       gameData.shouldShowTip = false
-    }
-    
-    if gameData.shouldShowTip2 {
-        delay(2.0){
-        self.tip2 = TapTipNode2()
-        self.tip2!.position = CGPoint(x: self.screenFrame.midX - 250, y: self.screenFrame.midY + 100)
-        self.tip2!.zPosition = 3
-        self.tip2!.alpha = 0
-        self.tip2!.appearWithDuration(2.0)
-        self.addChild(self.tip2!)
-        
-        self.gameData.shouldShowTip2 = false
-        }
     }
     
     // Notification
@@ -212,11 +200,47 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
       }
     }
     
+    if gameData.shouldShowTip2 {
+        delay(0.5){
+            self.tip2 = TapTipNode2()
+            self.tip2!.position = CGPoint(x: self.screenFrame.midX - 250, y: self.screenFrame.midY + 60)
+            self.tip2!.zPosition = 3
+            self.tip2!.alpha = 0
+            self.tip2!.appearWithDuration(0.5)
+            self.addChild(self.tip2!)
+            
+            self.gameData.shouldShowTip2 = false
+        }
+    }
+
+    
     if let tip2 = tip2 {
-        delay(5.0){
-        tip2.removeWithDuration(1.0) {
+        delay(4.0){
+        tip2.removeWithDuration(0.5) {
             self.tip2 = nil
         }
+        }
+    }
+    
+    if gameData.shouldShowTip3 {
+        delay(0.5){
+            self.tip3 = TapTipNode3()
+            self.tip3!.position = CGPoint(x: self.screenFrame.midX + 250, y: self.screenFrame.midY + 40)
+            self.tip3!.zPosition = 3
+            self.tip3!.alpha = 0
+            self.tip3!.appearWithDuration(0.5)
+            self.addChild(self.tip3!)
+            
+            self.gameData.shouldShowTip3 = false
+        }
+    }
+    
+    
+    if let tip3 = tip3 {
+        delay(4.0){
+            tip3.removeWithDuration(0.5) {
+                self.tip3 = nil
+            }
         }
     }
   }

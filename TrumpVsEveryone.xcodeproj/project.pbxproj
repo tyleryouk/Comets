@@ -18,6 +18,7 @@
 		36AB55CC1CB0CA5D0051F2F5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AB55CB1CB0CA5D0051F2F5 /* SystemConfiguration.framework */; };
 		36AB55D01CB0CABC0051F2F5 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AB55CF1CB0CABC0051F2F5 /* GoogleMobileAds.framework */; };
 		36AB55D21CB0D0020051F2F5 /* TapTip2Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB55D11CB0D0020051F2F5 /* TapTip2Node.swift */; };
+		36AB56051CB18F5A0051F2F5 /* TapTip3Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB56041CB18F5A0051F2F5 /* TapTip3Node.swift */; };
 		36E1D77C1C0D0AC100A1EBB8 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E1D77B1C0D0AC100A1EBB8 /* GameKit.framework */; };
 		43C05DEC1B296321009B8148 /* ScoreLineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C05DEB1B296321009B8148 /* ScoreLineNode.swift */; };
 		43C05DF01B2A8154009B8148 /* FilteredMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C05DEF1B2A8154009B8148 /* FilteredMotion.swift */; };
@@ -193,6 +194,7 @@
 		36AB55CB1CB0CA5D0051F2F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		36AB55CF1CB0CABC0051F2F5 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.7.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		36AB55D11CB0D0020051F2F5 /* TapTip2Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapTip2Node.swift; sourceTree = "<group>"; };
+		36AB56041CB18F5A0051F2F5 /* TapTip3Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapTip3Node.swift; sourceTree = "<group>"; };
 		36E1D77B1C0D0AC100A1EBB8 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		36E1D77D1C0D0BBE00A1EBB8 /* Santa Express.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Santa Express.entitlements"; sourceTree = "<group>"; };
 		43C05DEB1B296321009B8148 /* ScoreLineNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoreLineNode.swift; path = Nodes/ScoreLineNode.swift; sourceTree = "<group>"; };
@@ -526,6 +528,7 @@
 				EB0212501B1DD4010087B2E6 /* TextButtonNode.swift */,
 				EB0212591B1DD4F90087B2E6 /* WorldNode.swift */,
 				36AB55D11CB0D0020051F2F5 /* TapTip2Node.swift */,
+				36AB56041CB18F5A0051F2F5 /* TapTip3Node.swift */,
 			);
 			name = Nodes;
 			sourceTree = "<group>";
@@ -920,6 +923,7 @@
 				43C05DF21B2A81A4009B8148 /* SamplingFilterType.swift in Sources */,
 				EB0212741B1DE1320087B2E6 /* GroundNode.swift in Sources */,
 				EB661F6C1B3E6A3D00B6BA56 /* PaymentTransactionObserver.swift in Sources */,
+				36AB56051CB18F5A0051F2F5 /* TapTip3Node.swift in Sources */,
 				EB73BAB21B382C4E00BC7A38 /* ModalView.swift in Sources */,
 				EBB1ECA91B23DCD200768015 /* UserDefaultsHelper.swift in Sources */,
 				EB0212761B1DEB4C0087B2E6 /* EndlessBackgroundNode.swift in Sources */,

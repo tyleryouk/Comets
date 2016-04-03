@@ -1,5 +1,4 @@
 
-
 import SpriteKit
 
 private struct KeyForAction {
@@ -8,8 +7,8 @@ private struct KeyForAction {
     static let upDownAction = "upDownAction"
 }
 
-class TapTipNode2: SKNode {
-    let hand = SKSpriteNode(imageNamed: TextureFileName.TapTip2)
+class TapTipNode3: SKNode {
+    let hand = SKSpriteNode(imageNamed: TextureFileName.TapTip3)
     let textLabel = ShadowLabelNode(fontNamed: FontName.RegularFont)
     let textLabel2 = ShadowLabelNode(fontNamed: FontName.RegularFont)
     
@@ -29,14 +28,14 @@ class TapTipNode2: SKNode {
         hand.anchorPoint = CGPoint(x: 0.5, y: 0)
         addChild(hand)
         
-        textLabel.position = CGPoint(x: 0, y: -30)
-        textLabel.text = "Press and"
+        textLabel.position = CGPoint(x: 0, y: +135)
+        textLabel.text = "Release"
         
-        textLabel2.position = CGPoint(x: 0, y: -60)
-        textLabel2.text = "hold"
+        //textLabel2.position = CGPoint(x: 0, y: -110)
+        //textLabel2.text = "hold"
         
         addChild(textLabel)
-        addChild(textLabel2)
+        //addChild(textLabel2)
     }
     
     required init?(coder aDecoder: NSCoder) {

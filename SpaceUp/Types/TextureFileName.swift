@@ -71,6 +71,7 @@ struct TextureFileName {
     static let LabelNewScore = "LabelNewScore"
     static let TapTip = "Hand"
     static let TapTip2 = "Hand"
+    static let TapTip3 = "downHand"
 
     static let CrackedRed = "CrackedRed"
     static let CrackedSmall = "CrackedSmall"
