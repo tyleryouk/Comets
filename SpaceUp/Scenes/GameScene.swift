@@ -25,6 +25,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     var textures: [SKTexture]?
     var textureAtlases: [SKTextureAtlas]?
     var tip: TapTipNode?
+    var tip2: TapTipNode2?
     var gameStarted = false
     var godMode = false
     var gameOverCount:Int = 0
@@ -42,6 +43,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     func showInformationsWhileDeveloping() {
         self.view?.showsNodeCount = true
         self.view?.showsFPS = true;
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
 
   // MARK: - View
@@ -96,6 +106,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
       addChild(tip!)
       
       gameData.shouldShowTip = false
+    }
+    
+    if gameData.shouldShowTip2 {
+        delay(2.0){
+        self.tip2 = TapTipNode2()
+        self.tip2!.position = CGPoint(x: self.screenFrame.midX - 250, y: self.screenFrame.midY + 100)
+        self.tip2!.zPosition = 3
+        self.tip2!.alpha = 0
+        self.tip2!.appearWithDuration(2.0)
+        self.addChild(self.tip2!)
+        
+        self.gameData.shouldShowTip2 = false
+        }
     }
     
     // Notification
@@ -188,7 +211,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
         self.tip = nil
       }
     }
+    
+    if let tip2 = tip2 {
+        delay(5.0){
+        tip2.removeWithDuration(1.0) {
+            self.tip2 = nil
+        }
+        }
+    }
   }
+
   
   override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
     if view?.paused == true {

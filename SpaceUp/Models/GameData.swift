@@ -25,6 +25,7 @@ class GameData: NSObject, NSCoding {
   }
   
   var shouldShowTip: Bool = true
+    var shouldShowTip2: Bool = true
   
   // MARK: - Computed vars
   var level: UInt {
