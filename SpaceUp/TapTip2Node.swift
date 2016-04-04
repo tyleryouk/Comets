@@ -30,10 +30,10 @@ class TapTipNode2: SKNode {
         addChild(hand)
         
         textLabel.position = CGPoint(x: 0, y: -30)
-        textLabel.text = "Press and"
+        textLabel.text = "Press"
         
         textLabel2.position = CGPoint(x: 0, y: -60)
-        textLabel2.text = "hold"
+        textLabel2.text = "to go up"
         
         addChild(textLabel)
         addChild(textLabel2)

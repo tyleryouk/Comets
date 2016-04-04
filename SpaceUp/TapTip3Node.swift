@@ -28,14 +28,14 @@ class TapTipNode3: SKNode {
         hand.anchorPoint = CGPoint(x: 0.5, y: 0)
         addChild(hand)
         
-        textLabel.position = CGPoint(x: 0, y: +135)
+        textLabel.position = CGPoint(x: 0, y: +160)
         textLabel.text = "Release"
         
-        //textLabel2.position = CGPoint(x: 0, y: -110)
-        //textLabel2.text = "hold"
+        textLabel2.position = CGPoint(x: 0, y: +130)
+        textLabel2.text = "to go down"
         
         addChild(textLabel)
-        //addChild(textLabel2)
+        addChild(textLabel2)
     }
     
     required init?(coder aDecoder: NSCoder) {

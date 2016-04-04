@@ -24,7 +24,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     weak var motionDataSource: MotionDataSource?
     var textures: [SKTexture]?
     var textureAtlases: [SKTextureAtlas]?
-    var tip: TapTipNode?
     var tip2: TapTipNode2?
     var tip3: TapTipNode3?
     var gameStarted = false
@@ -96,18 +95,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     pauseButton.zPosition = 100
     pauseButton.position = CGPoint(x: screenFrame.maxX, y: screenFrame.maxY) - CGPoint(x: 60, y: 60)
     addChild(pauseButton)
+
     
-    // Tip
-    if gameData.shouldShowTip {
-      tip = TapTipNode()
-      tip!.position = CGPoint(x: screenFrame.midX, y: screenFrame.midY)
-      tip!.zPosition = 3
-      tip!.alpha = 0
-      tip!.appearWithDuration(0.5)
-      addChild(tip!)
-      
-      gameData.shouldShowTip = false
+    if gameData.shouldShowTip2 {
+        tip2 = TapTipNode2()
+        tip2!.position = CGPoint(x: screenFrame.midX - 250, y: screenFrame.midY - 370)
+        tip2!.zPosition = 3
+        tip2!.alpha = 0
+        tip2!.appearWithDuration(0.5)
+        addChild(tip2!)
+        
+        gameData.shouldShowTip2 = false
     }
+
     
     // Notification
     let notificationCenter = NSNotificationCenter.defaultCenter()
@@ -144,12 +144,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
       } else {
         world.player.brake()
       }
-      
-      /*
-      if world.player.state != .Standing {
-        world.player.moveByMotion(filteredMotion)
-      }
-      */
+    
     }
   }
   
@@ -163,13 +158,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
 
     // Camera
     world.followPlayer(crawlIncrement)
-    
-    // Background
-    /*
-    if round(gameData.score) == 0 {
-      background.updateOffsetByMotion(filteredMotion)
-    }
-    */
 
     background.move(world.position)
     
@@ -195,28 +183,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
       world.player.startMoveUpward()
     }
 
-    if let tip = tip {
-      tip.removeWithDuration(0.5) {
-        self.tip = nil
-      }
-    }
-    
-    if gameData.shouldShowTip2 {
-        delay(0.5){
-            self.tip2 = TapTipNode2()
-            self.tip2!.position = CGPoint(x: self.screenFrame.midX - 250, y: self.screenFrame.midY + 60)
-            self.tip2!.zPosition = 3
-            self.tip2!.alpha = 0
-            self.tip2!.appearWithDuration(0.5)
-            self.addChild(self.tip2!)
-            
-            self.gameData.shouldShowTip2 = false
-        }
-    }
-
     
     if let tip2 = tip2 {
-        delay(4.0){
+        delay(5.0){
         tip2.removeWithDuration(0.5) {
             self.tip2 = nil
         }
@@ -226,7 +195,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     if gameData.shouldShowTip3 {
         delay(0.5){
             self.tip3 = TapTipNode3()
-            self.tip3!.position = CGPoint(x: self.screenFrame.midX + 250, y: self.screenFrame.midY + 40)
+            self.tip3!.position = CGPoint(x: self.screenFrame.midX + 250, y: self.screenFrame.midY + 160)
             self.tip3!.zPosition = 3
             self.tip3!.alpha = 0
             self.tip3!.appearWithDuration(0.5)
