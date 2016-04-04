@@ -87,13 +87,13 @@ class CometNode: SKSpriteNode {
             sphere = SKSpriteNode(imageNamed: TextureFileName.CometStar)
             glow = SKSpriteNode(imageNamed: TextureFileName.CometStarGlow)
             
-            if (currentScore > 90 && currentScore <= 190) {
+            /*if (currentScore > 90 && currentScore <= 190) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometStar2)
                 glow = SKSpriteNode(imageNamed: TextureFileName.CometStarGlow2)
             } else if (currentScore > 190) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometStar3)
                 glow = SKSpriteNode(imageNamed: TextureFileName.CometStarGlow3)
-            }
+            }*/
             radius = 25
 
         default: //Regular

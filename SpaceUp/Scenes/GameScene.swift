@@ -175,6 +175,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     
     // Comet
     if gameStarted && world.player.isAlive {
+    
       cometPopulator.update()
     }
   }
