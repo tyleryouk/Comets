@@ -39,6 +39,46 @@
 		485427151CB0E24D004E95F3 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4854270A1CB0E24D004E95F3 /* Star.png */; };
 		485427161CB0E24D004E95F3 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4854270B1CB0E24D004E95F3 /* StarField.sks */; };
 		485427171CB0E24D004E95F3 /* Trail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4854270C1CB0E24D004E95F3 /* Trail.sks */; };
+		5008D4D61CB54624007077A2 /* BarackObama@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4AE1CB54624007077A2 /* BarackObama@2x.png */; };
+		5008D4D71CB54624007077A2 /* BarackObama@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4AF1CB54624007077A2 /* BarackObama@3x.png */; };
+		5008D4D81CB54624007077A2 /* BernieSanders@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B01CB54624007077A2 /* BernieSanders@2x.png */; };
+		5008D4D91CB54624007077A2 /* BernieSanders@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B11CB54624007077A2 /* BernieSanders@3x.png */; };
+		5008D4DA1CB54624007077A2 /* closeEnemiesViewButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B21CB54624007077A2 /* closeEnemiesViewButton@2x.png */; };
+		5008D4DB1CB54624007077A2 /* closeEnemiesViewButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B31CB54624007077A2 /* closeEnemiesViewButton@3x.png */; };
+		5008D4DC1CB54624007077A2 /* CometLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B41CB54624007077A2 /* CometLarge@2x.png */; };
+		5008D4DD1CB54624007077A2 /* CometLarge@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B51CB54624007077A2 /* CometLarge@3x.png */; };
+		5008D4DE1CB54624007077A2 /* CometLarge2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B61CB54624007077A2 /* CometLarge2@2x.png */; };
+		5008D4DF1CB54624007077A2 /* CometLarge2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B71CB54624007077A2 /* CometLarge2@3x.png */; };
+		5008D4E01CB54624007077A2 /* CometLarge3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B81CB54624007077A2 /* CometLarge3@2x.png */; };
+		5008D4E11CB54624007077A2 /* CometLarge3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4B91CB54624007077A2 /* CometLarge3@3x.png */; };
+		5008D4E21CB54624007077A2 /* CometMedium@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4BA1CB54624007077A2 /* CometMedium@2x.png */; };
+		5008D4E31CB54624007077A2 /* CometMedium@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4BB1CB54624007077A2 /* CometMedium@3x.png */; };
+		5008D4E41CB54624007077A2 /* CometMedium2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4BC1CB54624007077A2 /* CometMedium2@2x.png */; };
+		5008D4E51CB54624007077A2 /* CometMedium2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4BD1CB54624007077A2 /* CometMedium2@3x.png */; };
+		5008D4E61CB54624007077A2 /* CometMedium3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4BE1CB54624007077A2 /* CometMedium3@2x.png */; };
+		5008D4E71CB54624007077A2 /* CometMedium3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4BF1CB54624007077A2 /* CometMedium3@3x.png */; };
+		5008D4E81CB54624007077A2 /* CometSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C01CB54624007077A2 /* CometSmall@2x.png */; };
+		5008D4E91CB54624007077A2 /* CometSmall@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C11CB54624007077A2 /* CometSmall@3x.png */; };
+		5008D4EA1CB54624007077A2 /* CometSmall2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C21CB54624007077A2 /* CometSmall2@2x.png */; };
+		5008D4EB1CB54624007077A2 /* CometSmall2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C31CB54624007077A2 /* CometSmall2@3x.png */; };
+		5008D4EC1CB54624007077A2 /* CometSmall3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C41CB54624007077A2 /* CometSmall3@2x.png */; };
+		5008D4ED1CB54624007077A2 /* CometSmall3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C51CB54624007077A2 /* CometSmall3@3x.png */; };
+		5008D4EE1CB54624007077A2 /* FloRida@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C61CB54624007077A2 /* FloRida@2x.png */; };
+		5008D4EF1CB54624007077A2 /* FloRida@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C71CB54624007077A2 /* FloRida@3x.png */; };
+		5008D4F01CB54624007077A2 /* HilaryClinton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C81CB54624007077A2 /* HilaryClinton@2x.png */; };
+		5008D4F11CB54624007077A2 /* HilaryClinton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4C91CB54624007077A2 /* HilaryClinton@3x.png */; };
+		5008D4F21CB54624007077A2 /* JebBush@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4CA1CB54624007077A2 /* JebBush@2x.png */; };
+		5008D4F31CB54624007077A2 /* JebBush@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4CB1CB54624007077A2 /* JebBush@3x.png */; };
+		5008D4F41CB54624007077A2 /* MacMiller@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4CC1CB54624007077A2 /* MacMiller@2x.png */; };
+		5008D4F51CB54624007077A2 /* MacMiller@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4CD1CB54624007077A2 /* MacMiller@3x.png */; };
+		5008D4F61CB54624007077A2 /* MarcoRubio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4CE1CB54624007077A2 /* MarcoRubio@2x.png */; };
+		5008D4F71CB54624007077A2 /* MarcoRubio@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4CF1CB54624007077A2 /* MarcoRubio@3x.png */; };
+		5008D4F81CB54624007077A2 /* officialquestion@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4D01CB54624007077A2 /* officialquestion@2x.png */; };
+		5008D4F91CB54624007077A2 /* officialquestion@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4D11CB54624007077A2 /* officialquestion@3x.png */; };
+		5008D4FA1CB54624007077A2 /* TedCruz@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4D21CB54624007077A2 /* TedCruz@2x.png */; };
+		5008D4FB1CB54624007077A2 /* TedCruz@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4D31CB54624007077A2 /* TedCruz@3x.png */; };
+		5008D4FC1CB54624007077A2 /* VladimirPutin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4D41CB54624007077A2 /* VladimirPutin@2x.png */; };
+		5008D4FD1CB54624007077A2 /* VladimirPutin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5008D4D51CB54624007077A2 /* VladimirPutin@3x.png */; };
 		EB0211EE1B1DCF990087B2E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0211ED1B1DCF990087B2E6 /* AppDelegate.swift */; };
 		EB0211F71B1DCF9A0087B2E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0211F51B1DCF9A0087B2E6 /* Main.storyboard */; };
 		EB0211FC1B1DCF9A0087B2E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0211FA1B1DCF9A0087B2E6 /* LaunchScreen.xib */; };
@@ -215,6 +255,46 @@
 		4854270A1CB0E24D004E95F3 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
 		4854270B1CB0E24D004E95F3 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
 		4854270C1CB0E24D004E95F3 /* Trail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Trail.sks; sourceTree = "<group>"; };
+		5008D4AE1CB54624007077A2 /* BarackObama@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BarackObama@2x.png"; path = "Images/Environment.atlas/BarackObama@2x.png"; sourceTree = "<group>"; };
+		5008D4AF1CB54624007077A2 /* BarackObama@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BarackObama@3x.png"; path = "Images/Environment.atlas/BarackObama@3x.png"; sourceTree = "<group>"; };
+		5008D4B01CB54624007077A2 /* BernieSanders@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BernieSanders@2x.png"; path = "Images/Environment.atlas/BernieSanders@2x.png"; sourceTree = "<group>"; };
+		5008D4B11CB54624007077A2 /* BernieSanders@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BernieSanders@3x.png"; path = "Images/Environment.atlas/BernieSanders@3x.png"; sourceTree = "<group>"; };
+		5008D4B21CB54624007077A2 /* closeEnemiesViewButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "closeEnemiesViewButton@2x.png"; path = "Images/Environment.atlas/closeEnemiesViewButton@2x.png"; sourceTree = "<group>"; };
+		5008D4B31CB54624007077A2 /* closeEnemiesViewButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "closeEnemiesViewButton@3x.png"; path = "Images/Environment.atlas/closeEnemiesViewButton@3x.png"; sourceTree = "<group>"; };
+		5008D4B41CB54624007077A2 /* CometLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometLarge@2x.png"; path = "Images/Environment.atlas/CometLarge@2x.png"; sourceTree = "<group>"; };
+		5008D4B51CB54624007077A2 /* CometLarge@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometLarge@3x.png"; path = "Images/Environment.atlas/CometLarge@3x.png"; sourceTree = "<group>"; };
+		5008D4B61CB54624007077A2 /* CometLarge2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometLarge2@2x.png"; path = "Images/Environment.atlas/CometLarge2@2x.png"; sourceTree = "<group>"; };
+		5008D4B71CB54624007077A2 /* CometLarge2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometLarge2@3x.png"; path = "Images/Environment.atlas/CometLarge2@3x.png"; sourceTree = "<group>"; };
+		5008D4B81CB54624007077A2 /* CometLarge3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometLarge3@2x.png"; path = "Images/Environment.atlas/CometLarge3@2x.png"; sourceTree = "<group>"; };
+		5008D4B91CB54624007077A2 /* CometLarge3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometLarge3@3x.png"; path = "Images/Environment.atlas/CometLarge3@3x.png"; sourceTree = "<group>"; };
+		5008D4BA1CB54624007077A2 /* CometMedium@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometMedium@2x.png"; path = "Images/Environment.atlas/CometMedium@2x.png"; sourceTree = "<group>"; };
+		5008D4BB1CB54624007077A2 /* CometMedium@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometMedium@3x.png"; path = "Images/Environment.atlas/CometMedium@3x.png"; sourceTree = "<group>"; };
+		5008D4BC1CB54624007077A2 /* CometMedium2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometMedium2@2x.png"; path = "Images/Environment.atlas/CometMedium2@2x.png"; sourceTree = "<group>"; };
+		5008D4BD1CB54624007077A2 /* CometMedium2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometMedium2@3x.png"; path = "Images/Environment.atlas/CometMedium2@3x.png"; sourceTree = "<group>"; };
+		5008D4BE1CB54624007077A2 /* CometMedium3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometMedium3@2x.png"; path = "Images/Environment.atlas/CometMedium3@2x.png"; sourceTree = "<group>"; };
+		5008D4BF1CB54624007077A2 /* CometMedium3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometMedium3@3x.png"; path = "Images/Environment.atlas/CometMedium3@3x.png"; sourceTree = "<group>"; };
+		5008D4C01CB54624007077A2 /* CometSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometSmall@2x.png"; path = "Images/Environment.atlas/CometSmall@2x.png"; sourceTree = "<group>"; };
+		5008D4C11CB54624007077A2 /* CometSmall@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometSmall@3x.png"; path = "Images/Environment.atlas/CometSmall@3x.png"; sourceTree = "<group>"; };
+		5008D4C21CB54624007077A2 /* CometSmall2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometSmall2@2x.png"; path = "Images/Environment.atlas/CometSmall2@2x.png"; sourceTree = "<group>"; };
+		5008D4C31CB54624007077A2 /* CometSmall2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometSmall2@3x.png"; path = "Images/Environment.atlas/CometSmall2@3x.png"; sourceTree = "<group>"; };
+		5008D4C41CB54624007077A2 /* CometSmall3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometSmall3@2x.png"; path = "Images/Environment.atlas/CometSmall3@2x.png"; sourceTree = "<group>"; };
+		5008D4C51CB54624007077A2 /* CometSmall3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CometSmall3@3x.png"; path = "Images/Environment.atlas/CometSmall3@3x.png"; sourceTree = "<group>"; };
+		5008D4C61CB54624007077A2 /* FloRida@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FloRida@2x.png"; path = "Images/Environment.atlas/FloRida@2x.png"; sourceTree = "<group>"; };
+		5008D4C71CB54624007077A2 /* FloRida@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FloRida@3x.png"; path = "Images/Environment.atlas/FloRida@3x.png"; sourceTree = "<group>"; };
+		5008D4C81CB54624007077A2 /* HilaryClinton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HilaryClinton@2x.png"; path = "Images/Environment.atlas/HilaryClinton@2x.png"; sourceTree = "<group>"; };
+		5008D4C91CB54624007077A2 /* HilaryClinton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HilaryClinton@3x.png"; path = "Images/Environment.atlas/HilaryClinton@3x.png"; sourceTree = "<group>"; };
+		5008D4CA1CB54624007077A2 /* JebBush@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "JebBush@2x.png"; path = "Images/Environment.atlas/JebBush@2x.png"; sourceTree = "<group>"; };
+		5008D4CB1CB54624007077A2 /* JebBush@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "JebBush@3x.png"; path = "Images/Environment.atlas/JebBush@3x.png"; sourceTree = "<group>"; };
+		5008D4CC1CB54624007077A2 /* MacMiller@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MacMiller@2x.png"; path = "Images/Environment.atlas/MacMiller@2x.png"; sourceTree = "<group>"; };
+		5008D4CD1CB54624007077A2 /* MacMiller@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MacMiller@3x.png"; path = "Images/Environment.atlas/MacMiller@3x.png"; sourceTree = "<group>"; };
+		5008D4CE1CB54624007077A2 /* MarcoRubio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MarcoRubio@2x.png"; path = "Images/Environment.atlas/MarcoRubio@2x.png"; sourceTree = "<group>"; };
+		5008D4CF1CB54624007077A2 /* MarcoRubio@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MarcoRubio@3x.png"; path = "Images/Environment.atlas/MarcoRubio@3x.png"; sourceTree = "<group>"; };
+		5008D4D01CB54624007077A2 /* officialquestion@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "officialquestion@2x.png"; path = "Images/Environment.atlas/officialquestion@2x.png"; sourceTree = "<group>"; };
+		5008D4D11CB54624007077A2 /* officialquestion@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "officialquestion@3x.png"; path = "Images/Environment.atlas/officialquestion@3x.png"; sourceTree = "<group>"; };
+		5008D4D21CB54624007077A2 /* TedCruz@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TedCruz@2x.png"; path = "Images/Environment.atlas/TedCruz@2x.png"; sourceTree = "<group>"; };
+		5008D4D31CB54624007077A2 /* TedCruz@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TedCruz@3x.png"; path = "Images/Environment.atlas/TedCruz@3x.png"; sourceTree = "<group>"; };
+		5008D4D41CB54624007077A2 /* VladimirPutin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VladimirPutin@2x.png"; path = "Images/Environment.atlas/VladimirPutin@2x.png"; sourceTree = "<group>"; };
+		5008D4D51CB54624007077A2 /* VladimirPutin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VladimirPutin@3x.png"; path = "Images/Environment.atlas/VladimirPutin@3x.png"; sourceTree = "<group>"; };
 		EB0211E81B1DCF990087B2E6 /* TrumpVsEveryone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpVsEveryone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0211EC1B1DCF990087B2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB0211ED1B1DCF990087B2E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -409,6 +489,53 @@
 			path = Effects;
 			sourceTree = "<group>";
 		};
+		5008D4AD1CB545E1007077A2 /* New Menu Images */ = {
+			isa = PBXGroup;
+			children = (
+				5008D4AE1CB54624007077A2 /* BarackObama@2x.png */,
+				5008D4AF1CB54624007077A2 /* BarackObama@3x.png */,
+				5008D4B01CB54624007077A2 /* BernieSanders@2x.png */,
+				5008D4B11CB54624007077A2 /* BernieSanders@3x.png */,
+				5008D4B21CB54624007077A2 /* closeEnemiesViewButton@2x.png */,
+				5008D4B31CB54624007077A2 /* closeEnemiesViewButton@3x.png */,
+				5008D4B41CB54624007077A2 /* CometLarge@2x.png */,
+				5008D4B51CB54624007077A2 /* CometLarge@3x.png */,
+				5008D4B61CB54624007077A2 /* CometLarge2@2x.png */,
+				5008D4B71CB54624007077A2 /* CometLarge2@3x.png */,
+				5008D4B81CB54624007077A2 /* CometLarge3@2x.png */,
+				5008D4B91CB54624007077A2 /* CometLarge3@3x.png */,
+				5008D4BA1CB54624007077A2 /* CometMedium@2x.png */,
+				5008D4BB1CB54624007077A2 /* CometMedium@3x.png */,
+				5008D4BC1CB54624007077A2 /* CometMedium2@2x.png */,
+				5008D4BD1CB54624007077A2 /* CometMedium2@3x.png */,
+				5008D4BE1CB54624007077A2 /* CometMedium3@2x.png */,
+				5008D4BF1CB54624007077A2 /* CometMedium3@3x.png */,
+				5008D4C01CB54624007077A2 /* CometSmall@2x.png */,
+				5008D4C11CB54624007077A2 /* CometSmall@3x.png */,
+				5008D4C21CB54624007077A2 /* CometSmall2@2x.png */,
+				5008D4C31CB54624007077A2 /* CometSmall2@3x.png */,
+				5008D4C41CB54624007077A2 /* CometSmall3@2x.png */,
+				5008D4C51CB54624007077A2 /* CometSmall3@3x.png */,
+				5008D4C61CB54624007077A2 /* FloRida@2x.png */,
+				5008D4C71CB54624007077A2 /* FloRida@3x.png */,
+				5008D4C81CB54624007077A2 /* HilaryClinton@2x.png */,
+				5008D4C91CB54624007077A2 /* HilaryClinton@3x.png */,
+				5008D4CA1CB54624007077A2 /* JebBush@2x.png */,
+				5008D4CB1CB54624007077A2 /* JebBush@3x.png */,
+				5008D4CC1CB54624007077A2 /* MacMiller@2x.png */,
+				5008D4CD1CB54624007077A2 /* MacMiller@3x.png */,
+				5008D4CE1CB54624007077A2 /* MarcoRubio@2x.png */,
+				5008D4CF1CB54624007077A2 /* MarcoRubio@3x.png */,
+				5008D4D01CB54624007077A2 /* officialquestion@2x.png */,
+				5008D4D11CB54624007077A2 /* officialquestion@3x.png */,
+				5008D4D21CB54624007077A2 /* TedCruz@2x.png */,
+				5008D4D31CB54624007077A2 /* TedCruz@3x.png */,
+				5008D4D41CB54624007077A2 /* VladimirPutin@2x.png */,
+				5008D4D51CB54624007077A2 /* VladimirPutin@3x.png */,
+			);
+			name = "New Menu Images";
+			sourceTree = "<group>";
+		};
 		EB0211DF1B1DCF990087B2E6 = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +670,7 @@
 		EB02121B1B1DD23E0087B2E6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5008D4AD1CB545E1007077A2 /* New Menu Images */,
 				485426CE1CB0DCE0004E95F3 /* LaunchImages */,
 				EBD100D31B27077800D3680B /* Character.atlas */,
 				EBC2EB8B1B358E9D00CEA20B /* Environment.atlas */,
@@ -810,36 +938,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5008D4DE1CB54624007077A2 /* CometLarge2@2x.png in Resources */,
+				5008D4EC1CB54624007077A2 /* CometSmall3@2x.png in Resources */,
+				5008D4FD1CB54624007077A2 /* VladimirPutin@3x.png in Resources */,
 				485426D21CB0DCE0004E95F3 /* launch.jpg in Resources */,
 				485427151CB0E24D004E95F3 /* Star.png in Resources */,
+				5008D4F91CB54624007077A2 /* officialquestion@3x.png in Resources */,
 				4854270D1CB0E24D004E95F3 /* EngineSpark.sks in Resources */,
 				EB5DA0A21B5098690064B5F0 /* GameResult.caf in Resources */,
+				5008D4ED1CB54624007077A2 /* CometSmall3@3x.png in Resources */,
+				5008D4FC1CB54624007077A2 /* VladimirPutin@2x.png in Resources */,
+				5008D4D61CB54624007077A2 /* BarackObama@2x.png in Resources */,
 				EBD100D51B27077800D3680B /* Character.atlas in Resources */,
 				485427161CB0E24D004E95F3 /* StarField.sks in Resources */,
 				485427171CB0E24D004E95F3 /* Trail.sks in Resources */,
 				EBD100DC1B27221500D3680B /* FontAwesome.otf in Resources */,
 				4854270E1CB0E24D004E95F3 /* Explosion.sks in Resources */,
+				5008D4F41CB54624007077A2 /* MacMiller@2x.png in Resources */,
+				5008D4DD1CB54624007077A2 /* CometLarge@3x.png in Resources */,
+				5008D4DB1CB54624007077A2 /* closeEnemiesViewButton@3x.png in Resources */,
 				EB5DA0A01B5098690064B5F0 /* Explosion.caf in Resources */,
+				5008D4E91CB54624007077A2 /* CometSmall@3x.png in Resources */,
+				5008D4E11CB54624007077A2 /* CometLarge3@3x.png in Resources */,
+				5008D4FA1CB54624007077A2 /* TedCruz@2x.png in Resources */,
 				485427121CB0E24D004E95F3 /* Spark.png in Resources */,
 				EB5DA0A51B5098690064B5F0 /* PopHigh.caf in Resources */,
+				5008D4E31CB54624007077A2 /* CometMedium@3x.png in Resources */,
 				EB5DA0A11B5098690064B5F0 /* GameMusic.mp3 in Resources */,
+				5008D4F61CB54624007077A2 /* MarcoRubio@2x.png in Resources */,
 				EB5DA0A61B5098690064B5F0 /* Spaceship.caf in Resources */,
 				485427101CB0E24D004E95F3 /* Propel.sks in Resources */,
+				5008D4F01CB54624007077A2 /* HilaryClinton@2x.png in Resources */,
 				4854270F1CB0E24D004E95F3 /* ExplosionGlow.sks in Resources */,
+				5008D4DC1CB54624007077A2 /* CometLarge@2x.png in Resources */,
+				5008D4D91CB54624007077A2 /* BernieSanders@3x.png in Resources */,
+				5008D4E81CB54624007077A2 /* CometSmall@2x.png in Resources */,
+				5008D4F81CB54624007077A2 /* officialquestion@2x.png in Resources */,
 				EB0212A81B1F1BC60087B2E6 /* Images.xcassets in Resources */,
 				EBCA80651B2D484000CC00E2 /* UserInterface.atlas in Resources */,
 				EB5DA0A41B5098690064B5F0 /* MeowBonus.caf in Resources */,
+				5008D4FB1CB54624007077A2 /* TedCruz@3x.png in Resources */,
+				5008D4F71CB54624007077A2 /* MarcoRubio@3x.png in Resources */,
+				5008D4D71CB54624007077A2 /* BarackObama@3x.png in Resources */,
+				5008D4F51CB54624007077A2 /* MacMiller@3x.png in Resources */,
 				485427131CB0E24D004E95F3 /* Sphere.png in Resources */,
+				5008D4EE1CB54624007077A2 /* FloRida@2x.png in Resources */,
+				5008D4E71CB54624007077A2 /* CometMedium3@3x.png in Resources */,
+				5008D4E01CB54624007077A2 /* CometLarge3@2x.png in Resources */,
+				5008D4E51CB54624007077A2 /* CometMedium2@3x.png in Resources */,
+				5008D4EA1CB54624007077A2 /* CometSmall2@2x.png in Resources */,
 				485427111CB0E24D004E95F3 /* ShieldGlow.sks in Resources */,
 				EB0211FC1B1DCF9A0087B2E6 /* LaunchScreen.xib in Resources */,
+				5008D4E41CB54624007077A2 /* CometMedium2@2x.png in Resources */,
+				5008D4DF1CB54624007077A2 /* CometLarge2@3x.png in Resources */,
 				EB5DA09F1B5098690064B5F0 /* ButtonTap.caf in Resources */,
+				5008D4F11CB54624007077A2 /* HilaryClinton@3x.png in Resources */,
 				EB5DA0A31B5098690064B5F0 /* ItemCollected.caf in Resources */,
 				485427141CB0E24D004E95F3 /* SphereSmall.png in Resources */,
+				5008D4E21CB54624007077A2 /* CometMedium@2x.png in Resources */,
+				5008D4EB1CB54624007077A2 /* CometSmall2@3x.png in Resources */,
 				EBD100D91B2715EB00D3680B /* Righteous-Regular.ttf in Resources */,
 				485426D41CB0DCE0004E95F3 /* launch@3x.jpg in Resources */,
 				EBC2EB8C1B358E9D00CEA20B /* Environment.atlas in Resources */,
+				5008D4DA1CB54624007077A2 /* closeEnemiesViewButton@2x.png in Resources */,
+				5008D4D81CB54624007077A2 /* BernieSanders@2x.png in Resources */,
+				5008D4F21CB54624007077A2 /* JebBush@2x.png in Resources */,
 				EB0211F71B1DCF9A0087B2E6 /* Main.storyboard in Resources */,
+				5008D4EF1CB54624007077A2 /* FloRida@3x.png in Resources */,
+				5008D4E61CB54624007077A2 /* CometMedium3@2x.png in Resources */,
 				485426D31CB0DCE0004E95F3 /* launch@2x.jpg in Resources */,
+				5008D4F31CB54624007077A2 /* JebBush@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
