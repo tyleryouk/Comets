@@ -12,8 +12,8 @@ class LoadingScene: SKScene {
   // MARK: - Vars
   lazy var backgroundPosition = CGPointZero
   lazy var loadingLabel = ShadowLabelNode(fontNamed: FontName.RegularFont)
-  lazy var background = EndlessBackgroundNode(imageNames: [TextureFileName.Background])
-  lazy var galaxyStars = EndlessBackgroundNode(imageNames: [TextureFileName.BackgroundStars])
+  //lazy var background = EndlessBackgroundNode(imageNames: [TextureFileName.Background])
+  //lazy var galaxyStars = EndlessBackgroundNode(imageNames: [TextureFileName.BackgroundStars])
   
   lazy var dotAction: SKAction = {
     return SKAction.sequence([
@@ -46,8 +46,8 @@ class LoadingScene: SKScene {
     if type == .Regular {
       backgroundPosition.y -= 1
       
-      background.move(backgroundPosition, multiplier: 0.4)
-      galaxyStars.move(backgroundPosition, multiplier: 0.7)
+      //background.move(backgroundPosition, multiplier: 0.4)
+      //galaxyStars.move(backgroundPosition, multiplier: 0.7)
     }
   }
 
@@ -57,8 +57,8 @@ class LoadingScene: SKScene {
       backgroundColor = UIColor(hexString: ColorHex.BackgroundColor)
 
       // Background
-      addChild(background)
-      addChild(galaxyStars)
+      //addChild(background)
+      //addChild(galaxyStars)
       
       // Label
       loadingLabel.color = UIColor(hexString: ColorHex.TextColor)

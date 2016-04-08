@@ -10,11 +10,12 @@ struct TextureAtlasFileName {
 }
 
 struct TextureFileName {
-    static let StartBackground = "StartBackground"
+    //static let StartBackground = "StartBackground"
     static let StartLogo = "StartLogo"
 
-    static let Background = "Background"
+    //static let Background = "Background"
     static let BackgroundStars = "BackgroundStars"
+    static let BackgroundStars2 = "BackgroundStars2"
     static let BackgroundLargePlanets = "BackgroundLargePlanets"
     static let BackgroundSmallPlanets = "BackgroundSmallPlanets"
     static let PlanetGround = "PlanetGround"

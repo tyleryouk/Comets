@@ -4,7 +4,7 @@ import SpriteKit
 
 class StartScene: SKScene, ButtonDelegate {
   // MARK: - Immutable var
-  let background = EndlessBackgroundNode(imageNames: [TextureFileName.StartBackground])
+  //let background = EndlessBackgroundNode(imageNames: [TextureFileName.StartBackground])
   let galaxyStars = EndlessBackgroundNode(imageNames: [TextureFileName.BackgroundStars])
   let logo = SKSpriteNode(imageNamed: TextureFileName.StartLogo)
   let startButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonPlay)
@@ -34,7 +34,7 @@ class StartScene: SKScene, ButtonDelegate {
     backgroundColor = UIColor(hexString: ColorHex.BackgroundColor)
 
     // Background
-    addChild(background)
+    //addChild(background)
     addChild(galaxyStars)
     
     // Logo
@@ -87,7 +87,7 @@ class StartScene: SKScene, ButtonDelegate {
   override func update(currentTime: NSTimeInterval) {
     backgroundPosition.y -= 1
 
-    background.move(backgroundPosition, multiplier: 0.4)
+    //background.move(backgroundPosition, multiplier: 0.4)
     galaxyStars.move(backgroundPosition, multiplier: 0.7)
   }
   

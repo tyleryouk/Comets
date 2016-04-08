@@ -7,26 +7,26 @@ class SceneBackgroundNode: SKNode {
   weak var world: WorldNode?
   
   // MARK: - Immutable vars
-  private let galaxyBackground = EndlessBackgroundNode(imageNames: [TextureFileName.Background])
-  private let galaxyStars = EndlessBackgroundNode(imageNames: [TextureFileName.BackgroundStars])
-  private let galaxyLargePlanets = EndlessBackgroundNode(imageNames: [
+  //private let galaxyBackground = EndlessBackgroundNode(imageNames: [TextureFileName.Background])
+  private let galaxyStars = EndlessBackgroundNode(imageNames: [TextureFileName.BackgroundStars2])
+  /*private let galaxyLargePlanets = EndlessBackgroundNode(imageNames: [
     TextureFileName.BackgroundLargePlanets,
     TextureFileName.BackgroundLargePlanets + "2"
   ])
   private let galaxySmallPlanets = EndlessBackgroundNode(imageNames: [
     TextureFileName.BackgroundSmallPlanets,
     TextureFileName.BackgroundSmallPlanets + "2"
-  ])
+  ])*/
   private var positionOffset = CGPointZero
   
   // MARK: - Init
   override init() {
     super.init()
     
-    addChild(galaxyBackground)
+    //addChild(galaxyBackground)
     addChild(galaxyStars)
-    addChild(galaxySmallPlanets)
-    addChild(galaxyLargePlanets)
+    //addChild(galaxySmallPlanets)
+    //addChild(galaxyLargePlanets)
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -35,10 +35,10 @@ class SceneBackgroundNode: SKNode {
   
   // MARK: - Update
   func move(position: CGPoint) {
-    galaxyBackground.move(position + positionOffset, multiplier: 0.4)
+    //galaxyBackground.move(position + positionOffset, multiplier: 0.4)
     galaxyStars.move(position + positionOffset, multiplier: 0.5)
-    galaxySmallPlanets.move(position + positionOffset, multiplier: 0.6)
-    galaxyLargePlanets.move(position + positionOffset, multiplier: 0.7)
+   // galaxySmallPlanets.move(position + positionOffset, multiplier: 0.6)
+    //galaxyLargePlanets.move(position + positionOffset, multiplier: 0.7)
   }
   
   // MARK: - Offset
