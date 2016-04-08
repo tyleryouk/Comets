@@ -90,7 +90,7 @@ struct TextureFileName {
     static let kBarackObama = "BarackObama"
     static let kBernieSanders = "BernieSanders"
     static let kFloRida = "FloRida"
-    static let kHilaryClinton = "HillaryClinton"
+    static let kHilaryClinton = "HilaryClinton"
     static let kJebBush = "JebBush"
     static let kMacMiller = "MacMiller"
     static let kMarcoRubio = "MarcoRubio"

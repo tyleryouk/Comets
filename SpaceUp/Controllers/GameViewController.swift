@@ -1,25 +1,14 @@
-import SpriteKit
 import GameKit
 import StoreKit
 import CoreMotion
 
-
-
-// TODO: Refactor, too many responsbilities atm
 class GameViewController: UIViewController, GKGameCenterControllerDelegate, GameCenterManagerDelegate, GameSceneDelegate, StartSceneDelegate, SKProductsRequestDelegate, MotionDataSource {
   // MARK: - Immutable vars
-      var tableImg : UITableView  =   UITableView()
-    var scrollViewEmites: UIScrollView!
-    var CloseButton = UIButton()
   let gameCenterManager = GameCenterManager()
   let gameData = GameData.dataFromArchive()
   let motionManager = CMMotionManager()
-    var startY: CGFloat = 0.0
-    var lastY: CGFloat = 0.0
 
   // MARK: - Vars
-//  private var interstitialAdView: InterstitialAdView?
-//  private var numberOfRetriesSinceLastAd: UInt = 0
   private var products: [SKProduct]?
   private var removeAdsProduct: SKProduct?
 
@@ -37,22 +26,15 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Configure the view.
-    // skView.showsFPS = true
-    // skView.showsNodeCount = true
-    // skView.showsPhysics = true
     skView.ignoresSiblingOrder = true
     
     // Present scene
-   // preloadAndPresentStartScene()
-    presentStartScene()
-    
-    
+    preloadAndPresentStartScene()
+   // presentStartScene()
     
     // Authenticate GameCenter in next loop
     dispatch_async(dispatch_get_main_queue()) {
-     // LoadingIndicatorView.sharedView.showInView(self.view)
+     LoadingIndicatorView.sharedView.showInView(self.view)
       self.gameCenterManager.authenticateLocalPlayer()
     }
     
@@ -132,16 +114,9 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
             
         
         let textures: [SKTexture] = [
-        
-        
-            
             SKTexture(imageNamed: TextureFileName.Background),
             SKTexture(imageNamed: TextureFileName.BackgroundStars),
             SKTexture(imageNamed: TextureFileName.StartLogo)
-            
-           
-            
-            
         ]
         
         // Show loading scene
@@ -459,214 +434,18 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
     toggleMusicForScene(gameScene, withButton: button)
   }
     
-    
-    
-   
-    /*func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        
-        return 10
-        
-    }
-    
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell:UITableViewCell = self.tableImg.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
-        
-        
-        // Next line: fatal error: unexpectedly found nil while unwrapping an Optional value
-        
-        
-        
-         let cell_image: UIImageView = UIImageView(frame: CGRectMake(10, 5, 80, 80))
-         cell_image.tag = 111
-         cell.contentView.addSubview(cell_image)
-         cell_image.image = UIImage(named: "TedCruz")
-        
-        let cell_image2: UIImageView = UIImageView(frame: CGRectMake(tableImg.frame.size.width - 90, 5, 80, 80))
-        cell_image2.tag = 222
-        cell.contentView.addSubview(cell_image2)
-        cell_image2.image = UIImage(named: "HilaryClinton")
-        
-        let label1: UILabel = UILabel(frame: CGRectMake(5, cell_image.frame.origin.x + cell_image.frame.height , 70, 20))
-        label1.textColor = UIColor.whiteColor()
-        label1.textAlignment = NSTextAlignment.Center
-        label1.font =  UIFont.systemFontOfSize(12)
-        label1.tag = 125
-        label1.text = "TedCruz"
-        cell.addSubview(label1)
-        
-        
-        let label2: UILabel = UILabel(frame: CGRectMake(100 ,150, 90, 20))
-        label2.textColor = UIColor.whiteColor()
-        label2.textAlignment = NSTextAlignment.Center
-        label2.font =  UIFont.systemFontOfSize(12)
-        label2.tag = 112
-        label2.text = "Hilary Clinton"
-        cell.addSubview(label2)
-        
-        
-        
-        
-        cell.backgroundColor = UIColor(red: 0.773, green: 0.773, blue: 0.773, alpha: 1.0)
-        
-        
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
-        
-        return cell
-        
-        
-        
-    }
-    
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 110;
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected cell #\(indexPath.row)!")
-        // performSegueWithIdentifier("PlaceInfo", sender: nil)
-    }*/
-    
-   func closetable(sender: UIButton!) {
-    scrollViewEmites.hidden = true
-    scrollViewEmites.removeFromSuperview()
-    CloseButton.hidden = true
-    CloseButton.removeFromSuperview()
-    }
+
     
     func gameSceneDidRequestToShowEnemiesView(gameScene: GameScene, withHighestUserScore: Int) {
        
+        gameScene.view?.paused = false
         
-        scrollViewEmites = UIScrollView(frame: CGRectMake(30, 150, self.view.frame.size.width - 60, 370))
-        scrollViewEmites.backgroundColor = UIColor.clearColor()
-        var y: CGFloat = CGFloat(("5" as NSString).doubleValue)
-        
-       var galleryView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width - 60, 370))
-        
-        for i in 0...5 {
-            let cell_image: UIImageView = UIImageView(frame: CGRectMake(10, y, 80, 80))
-            cell_image.tag = 111
-            galleryView.addSubview(cell_image)
-            
-            
-            let cell_image2: UIImageView = UIImageView(frame: CGRectMake(galleryView.frame.size.width - 90, y, 80, 80))
-            cell_image2.tag = 222
-            galleryView.addSubview(cell_image2)
-            
-            
-            let label1: UILabel = UILabel(frame: CGRectMake(5, cell_image.frame.origin.y + cell_image.frame.height , 100, 20))
-            label1.textColor = UIColor.whiteColor()
-            label1.textAlignment = NSTextAlignment.Center
-            label1.font =  UIFont.boldSystemFontOfSize(13)
-            label1.tag = 125
-            
-            galleryView.addSubview(label1)
-            
-            
-            let label2: UILabel = UILabel(frame: CGRectMake(cell_image2.frame.origin.x - 20 ,cell_image.frame.origin.y + cell_image.frame.height, 100, 20))
-            label2.textColor = UIColor.whiteColor()
-            label2.textAlignment = NSTextAlignment.Center
-            label2.font =  UIFont.boldSystemFontOfSize(13)
-            label2.tag = 112
-           
-            galleryView.addSubview(label2)
-            
-            if(i==0){
-             label2.text = "Hilary Clinton"
-            label1.text = "TedCruz"
-            cell_image2.image = UIImage(named: "HilaryClinton")
-            cell_image.image = UIImage(named: "TedCruz")
-            }
-            else if(i == 1)
-            {
-                label1.text = "Unlock at 70"
-                label2.text = "Unlock at 80"
-                
-                cell_image2.image = UIImage(named: "officialquestion")
-                cell_image.image = UIImage(named: "officialquestion")
-            }
-            else if(i == 2)
-            {
-                label1.text = "Unlock at 100"
-                label2.text = "Unlock at 115"
-                cell_image.image = UIImage(named: "officialquestion")
-                cell_image2.image = UIImage(named: "officialquestion")
-            }
-            else if(i == 3)
-            {
-                label1.text = "Unlock at 145"
-                label2.text = "Unlock at 160"
-                cell_image.image = UIImage(named: "officialquestion")
-                cell_image2.image = UIImage(named: "officialquestion")
-            }
-            else if(i == 4)
-            {
-                label1.text = "Unlock at 130"
-                label2.text = ""
-                cell_image.image = UIImage(named: "officialquestion")
-                
-            }
-            
-            y = y + 110
-
-        }
-        galleryView.backgroundColor = UIColor(red: 0.773, green: 0.773, blue: 0.773, alpha: 1.0)
-        galleryView.frame = CGRectMake(0, 0, self.view.frame.size.width - 60, y)
-        scrollViewEmites.addSubview(galleryView)
-        
-        scrollViewEmites.contentSize = galleryView.bounds.size
-       
-    
-        self.view.addSubview(scrollViewEmites)
-        /*self.tableImg.frame = CGRectMake(30, 150, self.view.frame.size.width - 60, 370)
-        self.tableImg.delegate      =   self
-        self.tableImg.dataSource    =   self
-        self.tableImg.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.view.addSubview(tableImg)
-        self.tableImg.reloadData()*/
-        
-        CloseButton = UIButton()
-        CloseButton.frame = CGRectMake(self.view.frame.size.width - 50, 132 , 40, 40)
-        CloseButton.backgroundColor = UIColor.clearColor()
-        CloseButton.setImage(UIImage(named: "closeEnemiesViewButton.png"), forState: UIControlState.Normal)
-        CloseButton.addTarget(self, action: #selector(GameViewController.closetable(_:)), forControlEvents: .TouchUpInside)
-        
-        self.view.addSubview(CloseButton)
-
-        
-       /*var anchorPoint : CGPoint = CGPoint(x: 0.5, y: 0.5)
-        
-        
-         
-         
-         
-        
-        
-        let smallerRect = CGRectMake(400, 24, 600, 720)
-        let navRect = CGRectMake(0, 0, 600, 720)
-        
-        
-        
-       var smallerView : ScrollNewViewController = ScrollNewViewController()
-       smallerView.view.frame = smallerRect
-       self.view.insertSubview(smallerView.view, atIndex: 1000)*/
-        
-        /*tableImg.delegate = self;
-        tableImg.delegate = self;
-        
-        view.addSubview(tableImg)*/
-        
-        
-        /*gameScene.view?.paused = false
         gameScene.pauseMenu?.removeFromParent()
         gameScene.enemiesView = gameScene.presentEnemiesGameView(withHighestUserScore)
         
         afterDelay(0.05) { [weak gameScene] in
             gameScene!.view?.paused = true
-        }*/
+        }
     }
   
     func gameSceneDidRequestToDismissEnemiesView(gameScene: GameScene) {
