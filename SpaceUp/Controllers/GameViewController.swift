@@ -1,3 +1,5 @@
+// TEST PUSH
+
 import GameKit
 import StoreKit
 import CoreMotion
@@ -12,6 +14,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
   private var products: [SKProduct]?
   private var removeAdsProduct: SKProduct?
 
+    
   // MARK: - Computed vars
   var skView: SKView! {
     return view as? SKView

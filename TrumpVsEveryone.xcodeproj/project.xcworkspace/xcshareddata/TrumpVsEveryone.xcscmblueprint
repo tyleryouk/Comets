@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "47D5C6CB2816F73BFD1FDBC4A55E225077AC4560",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "47D5C6CB2816F73BFD1FDBC4A55E225077AC4560" : 0,
+    "5AE798699324FAF68AD7A5EE150D71111C202577" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1A6F904B-D182-4AE7-841D-8F9D40EB2E91",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "47D5C6CB2816F73BFD1FDBC4A55E225077AC4560" : "Trump\/",
+    "5AE798699324FAF68AD7A5EE150D71111C202577" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TrumpVsEveryone",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TrumpVsEveryone.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tyleryouk11\/Trump.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "47D5C6CB2816F73BFD1FDBC4A55E225077AC4560"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/christymaclaptop\/testingTYLER.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5AE798699324FAF68AD7A5EE150D71111C202577"
+    }
+  ]
+}
