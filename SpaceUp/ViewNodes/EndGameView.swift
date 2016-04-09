@@ -12,10 +12,17 @@ class EndGameView: ModalView {
   let quitButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonHome)
   let leaderboardButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonLeaderboard)
   let newLabel = SpriteButtonNode(imageNamed: TextureFileName.LabelNewScore)
+  let enemiesButtonGO = SpriteButtonNode(imageNamed: TextureFileName.kEnemiesButtonGO)
   
   // MARK: - Init
   init() {
     super.init(size:  CGSize(width: 640, height: 920))
+    
+    // Enemies
+    enemiesButtonGO.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.minY + 120)
+    enemiesButtonGO.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButton), forState: .Normal)
+    //enemiesButton.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButtonToched), forState: .Active)
+    modal.addChild(enemiesButtonGO)
     
     // Game Over
     gameOverLabel.fontColor = UIColor(hexString: ColorHex.TextColor)

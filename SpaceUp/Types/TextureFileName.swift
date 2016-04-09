@@ -87,7 +87,8 @@ struct TextureFileName {
     static let Explosion = "Explosion"
     
     static let kEnemiesButton = "buttonfinished"
-    static let kEnemiesButtonToched = "buttontouched"
+    static let kEnemiesButtonGO = "buttonfinishedGO"
+    //static let kEnemiesButtonTouched = "buttontouched"
     static let kBarackObama = "BarackObama"
     static let kBernieSanders = "BernieSanders"
     static let kFloRida = "FloRida"

@@ -29,6 +29,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     var gameStarted = false
     var godMode = false
     var gameOverCount:Int = 0
+    var PauseORGameOver:Int = 0
     
   // MARK: - Init
   init(size: CGSize, gameData: GameData) {
@@ -255,6 +256,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     endGameView.continueButton.delegate = self
     endGameView.quitButton.delegate = self
     endGameView.leaderboardButton.delegate = self
+    endGameView.enemiesButtonGO.delegate = self
     endGameView.updateWithGameData(gameData, hasNewTopScore: hasNewTopScore)
 
     addChild(endGameView)
@@ -366,6 +368,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     
     
   }
+
   
   // MARK: - ButtonDelegate
   func touchBeganForButton(button: ButtonNode) {
@@ -383,14 +386,27 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
         continueGame()
     } else if button == endGameView?.leaderboardButton {
         gameSceneDelegate?.gameSceneDidRequestLeaderboard?(self)
+    } else if button == endGameView?.enemiesButtonGO {
+        PauseORGameOver = 1
+        if (gameData.score > gameData.topScore) {
+            gameSceneDelegate?.gameSceneDidRequestToShowEnemiesViewGO?(self, withHighestUserScore: Int(round(gameData.score)))
+        } else {
+            gameSceneDelegate?.gameSceneDidRequestToShowEnemiesViewGO?(self, withHighestUserScore: Int(round(gameData.topScore)))
+        }
     } else if button == pauseMenu?.enemiesButton {
+        PauseORGameOver = 2
         if (gameData.score > gameData.topScore) {
             gameSceneDelegate?.gameSceneDidRequestToShowEnemiesView?(self, withHighestUserScore: Int(round(gameData.score)))
         } else {
             gameSceneDelegate?.gameSceneDidRequestToShowEnemiesView?(self, withHighestUserScore: Int(round(gameData.topScore)))
         }
     } else if button == enemiesView?.exitButton {
-       gameSceneDelegate?.gameSceneDidRequestToDismissEnemiesView?(self)
+        if(PauseORGameOver == 1){
+       gameSceneDelegate?.gameSceneDidRequestToDismissEnemiesViewGO?(self)
+        }
+        if(PauseORGameOver == 2){
+            gameSceneDelegate?.gameSceneDidRequestToDismissEnemiesView?(self)
+        }
     }
   }
   

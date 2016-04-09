@@ -458,6 +458,28 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
 
     }
     
+    func gameSceneDidRequestToShowEnemiesViewGO(gameScene: GameScene, withHighestUserScore: Int) {
+        
+        gameScene.view?.paused = false
+        
+        gameScene.endGameView?.removeFromParent()
+        gameScene.enemiesView = gameScene.presentEnemiesGameView(withHighestUserScore)
+        
+        afterDelay(0.05) { [weak gameScene] in
+            gameScene!.view?.paused = true
+        }
+    }
+    
+    func gameSceneDidRequestToDismissEnemiesViewGO(gameScene: GameScene) {
+        gameScene.view?.paused = false
+        gameScene.enemiesView?.removeFromParent()
+        gameScene.endGameView = gameScene.presentEndGameView()
+        afterDelay(0.05) { [weak gameScene] in
+            gameScene!.view?.paused = true
+        }
+        
+    }
+    
     
     
     
