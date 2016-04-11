@@ -446,13 +446,15 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
         gameScene.pauseMenu?.removeFromParent()
         gameScene.enemiesView = gameScene.presentEnemiesGameView(withHighestUserScore)
         
+        //MARK - Can't scroll anything if the scene is paused!
         afterDelay(0.05) { [weak gameScene] in
-            gameScene!.view?.paused = true
+            //gameScene!.view?.paused = true
         }
     }
   
     func gameSceneDidRequestToDismissEnemiesView(gameScene: GameScene) {
         gameScene.view?.paused = false
+        gameScene.enemiesView?.removeGestureRecognizerFromView(view)
         gameScene.enemiesView?.removeFromParent()
         gameScene.pauseMenu = gameScene.presentPauseMenu()
         afterDelay(0.05) { [weak gameScene] in
@@ -468,13 +470,15 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
         gameScene.endGameView?.removeFromParent()
         gameScene.enemiesView = gameScene.presentEnemiesGameView(withHighestUserScore)
         
+        //MARK - Can't scroll anything if the scene is paused!
         afterDelay(0.05) { [weak gameScene] in
-            gameScene!.view?.paused = true
+            //gameScene!.view?.paused = true
         }
     }
     
     func gameSceneDidRequestToDismissEnemiesViewGO(gameScene: GameScene) {
         gameScene.view?.paused = false
+        gameScene.enemiesView?.removeGestureRecognizerFromView(view)
         gameScene.enemiesView?.removeFromParent()
         gameScene.endGameView = gameScene.presentEndGameView()
         afterDelay(0.05) { [weak gameScene] in

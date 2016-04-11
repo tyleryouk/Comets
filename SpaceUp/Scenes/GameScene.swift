@@ -269,6 +269,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
         enemiesView.zPosition = 1000
         enemiesView.exitButton.delegate = self
         addChild(enemiesView)
+        enemiesView.addGestureRecognizerToView(view! as UIView)
         return enemiesView
     }
     
