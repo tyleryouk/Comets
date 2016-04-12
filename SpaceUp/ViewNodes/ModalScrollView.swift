@@ -10,6 +10,9 @@ import SpriteKit
 
 class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
     let scrollingNode = SKNode()
+    var scrollIndicatorBar: SKSpriteNode!
+    var scrollIndicatorDot: SKSpriteNode!
+    var scrollIndicatorBarBG: SKSpriteNode!
     var gestureRecognizer: UIPanGestureRecognizer!
     var yOffset: CGFloat = 0
     var maxYPosition: CGFloat = 0
@@ -37,7 +40,23 @@ class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
         
         modalBackground.addChild(cropNode)
         
+        scrollIndicatorBarBG = SKSpriteNode(color: SKColor.blackColor(), size: CGSize(width: 10, height: 904))
+        scrollIndicatorBarBG.position = CGPoint(x: 280, y: 0)
+        modalBackground.addChild(scrollIndicatorBarBG)
+        
+        scrollIndicatorBar = SKSpriteNode(color: SKColor.blackColor(), size: CGSize(width: 10, height: 900))
+        scrollIndicatorBar.position = CGPoint(x: 0, y: 0)
+        scrollIndicatorBarBG.addChild(scrollIndicatorBar)
+        scrollIndicatorBar.yScale = -1.0
+        
+        scrollIndicatorDot = SKSpriteNode(color: SKColor.whiteColor(), size: CGSize(width: 8.0, height: 16.0))
+        scrollIndicatorDot.anchorPoint = CGPoint(x: 0.5, y: 1.0)
+        scrollIndicatorDot.position = CGPoint(x: 0.0, y: 442.0)
+        scrollIndicatorBar.addChild(scrollIndicatorDot)
+        
         yOffset = scrollingNode.calculateAccumulatedFrame().origin.y
+        
+        updateScrollIndicator()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -52,6 +71,14 @@ class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
     
     //MARK - Scrolling
     
+    func updateScrollIndicator() {
+        let offset: CGFloat = scrollIndicatorBar.frame.size.height/2
+        let scrollPercentage: CGFloat = scrollingNode.position.y/minYPosition
+        let newYPos: CGFloat = scrollIndicatorBar.frame.size.height * scrollPercentage
+        scrollIndicatorDot.anchorPoint = CGPoint(x: 0.5, y: scrollPercentage)
+        scrollIndicatorDot.position = CGPoint(x: scrollIndicatorDot.position.x, y: newYPos - offset)
+    }
+    
     func scrollForTranslation(theTranslation: CGPoint) {
         var newPosition = CGPoint(x: scrollingNode.position.x, y: scrollingNode.position.y - theTranslation.y)
         if newPosition.y < maxYPosition {
@@ -61,6 +88,7 @@ class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
             newPosition = CGPoint(x: newPosition.x, y: minYPosition)
         }
         scrollingNode.position = newPosition
+        updateScrollIndicator()
     }
     
     //MARK - Gesture handling
@@ -88,6 +116,7 @@ class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
             recognizer.setTranslation(CGPointZero, inView: recognizer.view)
             
         }
+        
     }
     
     //MARK - UIGestureRecognizerDelegate

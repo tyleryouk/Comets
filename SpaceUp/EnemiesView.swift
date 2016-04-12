@@ -36,7 +36,7 @@ class EnemiesView : ModalScrollView {
         exitButton.position = CGPoint(x: modalBackground.frame.maxX, y: modalBackground.frame.maxY)
         modal.addChild(exitButton)
         
-        let range: Int = 160
+        let range: Int = 140
         
         //0 - 0
         let firstImageToSet = self.createNewImageRequiredPoints(20, position: 0, xPosition: -range, yPosition: 300)
