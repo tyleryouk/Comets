@@ -100,7 +100,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     
     if gameData.shouldShowTip2 {
         tip2 = TapTipNode2()
-        tip2!.position = CGPoint(x: screenFrame.midX - 250, y: screenFrame.midY - 370)
+        tip2!.position = CGPoint(x: screenFrame.midX - 175, y: screenFrame.midY - 390)
         tip2!.zPosition = 3
         tip2!.alpha = 0
         tip2!.appearWithDuration(0.5)
@@ -196,7 +196,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     if gameData.shouldShowTip3 {
         delay(0.5){
             self.tip3 = TapTipNode3()
-            self.tip3!.position = CGPoint(x: self.screenFrame.midX + 250, y: self.screenFrame.midY + 160)
+            self.tip3!.position = CGPoint(x: self.screenFrame.midX + 175, y: self.screenFrame.midY + 180)
             self.tip3!.zPosition = 3
             self.tip3!.alpha = 0
             self.tip3!.appearWithDuration(0.5)

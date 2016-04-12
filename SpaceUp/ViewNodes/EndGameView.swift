@@ -18,15 +18,9 @@ class EndGameView: ModalView {
   init() {
     super.init(size:  CGSize(width: 640, height: 920))
     
-    // Enemies
-    enemiesButtonGO.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.minY + 120)
-    enemiesButtonGO.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButton), forState: .Normal)
-    //enemiesButton.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButtonToched), forState: .Active)
-    modal.addChild(enemiesButtonGO)
-    
     // Game Over
     gameOverLabel.fontColor = UIColor(hexString: ColorHex.TextColor)
-    gameOverLabel.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.maxY - 180)
+    gameOverLabel.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.maxY - 150)
     gameOverLabel.fontSize = 80
     gameOverLabel.text = "GAME OVER"
     modal.addChild(gameOverLabel)
@@ -63,15 +57,21 @@ class EndGameView: ModalView {
     modal.addChild(topScoreLabel)
     
     // Retry
-    continueButton.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.minY + 280)
+    continueButton.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.minY + 330)
     modal.addChild(continueButton)
     
+    // Enemies
+    enemiesButtonGO.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.minY + 130)
+    enemiesButtonGO.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButton), forState: .Normal)
+    //enemiesButton.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButtonToched), forState: .Active)
+    modal.addChild(enemiesButtonGO)
+    
     // Quit
-    quitButton.position = CGPoint(x: modalBackground.frame.maxX - 130, y: modalBackground.frame.minY + 130)
+    quitButton.position = CGPoint(x: modalBackground.frame.maxX - 100, y: modalBackground.frame.minY + 130)
     modal.addChild(quitButton)
     
     // Leaderboard
-    leaderboardButton.position = CGPoint(x: modalBackground.frame.minX + 130, y: modalBackground.frame.minY + 130)
+    leaderboardButton.position = CGPoint(x: modalBackground.frame.minX + 100, y: modalBackground.frame.minY + 130)
     modal.addChild(leaderboardButton)
   }
 
