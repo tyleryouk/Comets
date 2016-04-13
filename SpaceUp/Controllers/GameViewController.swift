@@ -447,9 +447,9 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
         gameScene.enemiesView = gameScene.presentEnemiesGameView(withHighestUserScore)
         
         //MARK - Can't scroll anything if the scene is paused!
-        //afterDelay(0.05) { [weak gameScene] in
-            //gameScene!.view?.paused = true
-        //}
+        /*afterDelay(0.05) { [weak gameScene] in
+            gameScene!.view?.paused = true
+        }*/
     }
   
     func gameSceneDidRequestToDismissEnemiesView(gameScene: GameScene) {

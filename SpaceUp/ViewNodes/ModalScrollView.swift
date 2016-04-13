@@ -40,16 +40,16 @@ class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
         
         modalBackground.addChild(cropNode)
         
-        scrollIndicatorBarBG = SKSpriteNode(color: SKColor.blackColor(), size: CGSize(width: 10, height: 904))
+        scrollIndicatorBarBG = SKSpriteNode(color: SKColor.clearColor(), size: CGSize(width: 10, height: 904))
         scrollIndicatorBarBG.position = CGPoint(x: 280, y: 0)
         modalBackground.addChild(scrollIndicatorBarBG)
         
-        scrollIndicatorBar = SKSpriteNode(color: SKColor.blackColor(), size: CGSize(width: 10, height: 900))
+        scrollIndicatorBar = SKSpriteNode(color: SKColor.clearColor(), size: CGSize(width: 10, height: 900))
         scrollIndicatorBar.position = CGPoint(x: 0, y: 0)
         scrollIndicatorBarBG.addChild(scrollIndicatorBar)
         scrollIndicatorBar.yScale = -1.0
         
-        scrollIndicatorDot = SKSpriteNode(color: SKColor.whiteColor(), size: CGSize(width: 8.0, height: 16.0))
+        scrollIndicatorDot = SKSpriteNode(color: SKColor.blackColor(), size: CGSize(width: 8.0, height: 100.0))
         scrollIndicatorDot.anchorPoint = CGPoint(x: 0.5, y: 1.0)
         scrollIndicatorDot.position = CGPoint(x: 0.0, y: 442.0)
         scrollIndicatorBar.addChild(scrollIndicatorDot)

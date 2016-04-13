@@ -67,11 +67,11 @@ class EndGameView: ModalView {
     modal.addChild(enemiesButtonGO)
     
     // Quit
-    quitButton.position = CGPoint(x: modalBackground.frame.maxX - 100, y: modalBackground.frame.minY + 130)
+    quitButton.position = CGPoint(x: modalBackground.frame.maxX - 90, y: modalBackground.frame.minY + 130)
     modal.addChild(quitButton)
     
     // Leaderboard
-    leaderboardButton.position = CGPoint(x: modalBackground.frame.minX + 100, y: modalBackground.frame.minY + 130)
+    leaderboardButton.position = CGPoint(x: modalBackground.frame.minX + 90, y: modalBackground.frame.minY + 130)
     modal.addChild(leaderboardButton)
   }
 
