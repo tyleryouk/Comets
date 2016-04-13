@@ -19,5 +19,3 @@ let MaximumCameraCrawlIncrement: CGFloat = 5
 // MARK: - Archive
 let GameDataArchiveName = "GameData"
 
-//// MARK: - iAd
-//let MinimumNumberOfRetriesBeforePresentingAd: UInt = 3

@@ -450,13 +450,27 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
         /*afterDelay(0.05) { [weak gameScene] in
             gameScene!.view?.paused = true
         }*/
+        
+        /*if (paused) {
+            self.pauseButton.hidden = true
+            gameSceneDelegate?.gameSceneDidPause?(self)
+            self.pauseMenu = presentPauseMenu()
+            self.pauseMenu?.resumeButton.delegate = self
+            afterDelay(0.1) { [weak self] in
+                self!.view?.paused = true
+            }
+        } else {
+            self.view?.paused = false
+            self.pauseButton.hidden = false
+            self.pauseMenu?.removeFromParent()
+            gameSceneDelegate?.gameSceneDidResume?(self)
+        }*/
     }
   
     func gameSceneDidRequestToDismissEnemiesView(gameScene: GameScene) {
         gameScene.view?.paused = false
         gameScene.enemiesView?.removeGestureRecognizerFromView(view)
         gameScene.enemiesView?.removeFromParent()
-        gameScene.pauseMenu = gameScene.presentPauseMenu()
         afterDelay(0.05) { [weak gameScene] in
             gameScene!.view?.paused = true
         }
