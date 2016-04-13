@@ -11,8 +11,7 @@ import SpriteKit
 class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
     let scrollingNode = SKNode()
     var scrollIndicatorBar: SKSpriteNode!
-    var scrollIndicatorDot: SKSpriteNode!
-    var scrollIndicatorBarBG: SKSpriteNode!
+    var scrollIndicatorDot: SKShapeNode!
     var gestureRecognizer: UIPanGestureRecognizer!
     var yOffset: CGFloat = 0
     var maxYPosition: CGFloat = 0
@@ -40,18 +39,16 @@ class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
         
         modalBackground.addChild(cropNode)
         
-        scrollIndicatorBarBG = SKSpriteNode(color: SKColor.clearColor(), size: CGSize(width: 10, height: 904))
-        scrollIndicatorBarBG.position = CGPoint(x: 280, y: 0)
-        modalBackground.addChild(scrollIndicatorBarBG)
-        
-        scrollIndicatorBar = SKSpriteNode(color: SKColor.clearColor(), size: CGSize(width: 10, height: 900))
-        scrollIndicatorBar.position = CGPoint(x: 0, y: 0)
-        scrollIndicatorBarBG.addChild(scrollIndicatorBar)
+        scrollIndicatorBar = SKSpriteNode(color: SKColor.clearColor(), size: CGSize(width: 10, height: 800))
+        scrollIndicatorBar.position = CGPoint(x: 280.0, y: 0)
+        modalBackground.addChild(scrollIndicatorBar)
         scrollIndicatorBar.yScale = -1.0
         
-        scrollIndicatorDot = SKSpriteNode(color: SKColor.blackColor(), size: CGSize(width: 8.0, height: 100.0))
-        scrollIndicatorDot.anchorPoint = CGPoint(x: 0.5, y: 1.0)
-        scrollIndicatorDot.position = CGPoint(x: 0.0, y: 442.0)
+        scrollIndicatorDot = SKShapeNode(rectOfSize: CGSize(width: 8.0, height: 100.0), cornerRadius: 5.0)
+        scrollIndicatorDot.fillColor = SKColor.blackColor()
+        scrollIndicatorDot.strokeColor = SKColor.clearColor()
+        //scrollIndicatorDot.antialiased = true
+        scrollIndicatorDot.position = CGPoint(x: 0.0, y: 0.0)
         scrollIndicatorBar.addChild(scrollIndicatorDot)
         
         yOffset = scrollingNode.calculateAccumulatedFrame().origin.y
@@ -75,7 +72,6 @@ class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
         let offset: CGFloat = scrollIndicatorBar.frame.size.height/2
         let scrollPercentage: CGFloat = scrollingNode.position.y/minYPosition
         let newYPos: CGFloat = scrollIndicatorBar.frame.size.height * scrollPercentage
-        scrollIndicatorDot.anchorPoint = CGPoint(x: 0.5, y: scrollPercentage)
         scrollIndicatorDot.position = CGPoint(x: scrollIndicatorDot.position.x, y: newYPos - offset)
     }
     
