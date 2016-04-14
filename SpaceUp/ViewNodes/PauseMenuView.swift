@@ -3,24 +3,16 @@ import SpriteKit
 class PauseMenuView: ModalView {
   // MARK: - Immutable var
     let resumeButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonResume)
-    let enemiesButton = SpriteButtonNode(imageNamed: TextureFileName.kEnemiesButton)
-    //let enemiesButtonTouchd = SpriteButtonNode(imageNamed: TextureFileName.kEnemiesButtonToched)
     let quitButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonHome)
     let soundButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonSound)
     let musicButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonMusic)
   
   // MARK: - Init
     init() {
-        super.init(size: CGSize(width: 640, height: 740))
-
-        // Enemies
-        enemiesButton.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.maxY - 150)
-        enemiesButton.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButton), forState: .Normal)
-        //enemiesButton.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButtonToched), forState: .Active)
-        modal.addChild(enemiesButton)
+        super.init(size: CGSize(width: 640, height: 640))
         
         // Resume
-        resumeButton.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.maxY - 400)
+        resumeButton.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.maxY - 230)
         modal.addChild(resumeButton)
 
         // Sound

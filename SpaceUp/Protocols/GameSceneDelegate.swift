@@ -19,8 +19,8 @@ import SpriteKit
     optional func gameSceneDidResume(gameScene: GameScene)
     optional func gameSceneDidEnd(gameScene: GameScene)
     optional func gameSceneDidStart(gameScene: GameScene)
-    optional func gameSceneDidRequestToShowEnemiesView(gameScene: GameScene, withHighestUserScore: Int)
-    optional func gameSceneDidRequestToDismissEnemiesView(gameScene: GameScene)
+    //optional func gameSceneDidRequestToShowEnemiesView(gameScene: GameScene, withHighestUserScore: Int)
+    //optional func gameSceneDidRequestToDismissEnemiesView(gameScene: GameScene)
     optional func gameSceneDidRequestToShowEnemiesViewGO(gameScene: GameScene, withHighestUserScore: Int)
     optional func gameSceneDidRequestToDismissEnemiesViewGO(gameScene: GameScene)
 }

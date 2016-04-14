@@ -208,7 +208,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     
     
     if let tip3 = tip3 {
-        delay(4.0){
+        delay(3.5){
             tip3.removeWithDuration(0.5) {
                 self.tip3 = nil
             }
@@ -243,7 +243,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     pauseMenu.quitButton.delegate = self
     pauseMenu.soundButton.delegate = self
     pauseMenu.musicButton.delegate = self
-    pauseMenu.enemiesButton.delegate = self
 
     addChild(pauseMenu)
     return pauseMenu
@@ -388,26 +387,26 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     } else if button == endGameView?.leaderboardButton {
         gameSceneDelegate?.gameSceneDidRequestLeaderboard?(self)
     } else if button == endGameView?.enemiesButtonGO {
-        PauseORGameOver = 1
+        //PauseORGameOver = 1
         if (gameData.score > gameData.topScore) {
             gameSceneDelegate?.gameSceneDidRequestToShowEnemiesViewGO?(self, withHighestUserScore: Int(round(gameData.score)))
         } else {
             gameSceneDelegate?.gameSceneDidRequestToShowEnemiesViewGO?(self, withHighestUserScore: Int(round(gameData.topScore)))
         }
-    } else if button == pauseMenu?.enemiesButton {
+    } /*else if button == pauseMenu?.enemiesButton {
         PauseORGameOver = 2
         if (gameData.score > gameData.topScore) {
             gameSceneDelegate?.gameSceneDidRequestToShowEnemiesView?(self, withHighestUserScore: Int(round(gameData.score)))
         } else {
             gameSceneDelegate?.gameSceneDidRequestToShowEnemiesView?(self, withHighestUserScore: Int(round(gameData.topScore)))
         }
-    } else if button == enemiesView?.exitButton {
-        if(PauseORGameOver == 1){
+    } */else if button == enemiesView?.exitButton {
+        //if(PauseORGameOver == 1){
        gameSceneDelegate?.gameSceneDidRequestToDismissEnemiesViewGO?(self)
-        }
+        /*}
         if(PauseORGameOver == 2){
             gameSceneDelegate?.gameSceneDidRequestToDismissEnemiesView?(self)
-        }
+        }*/
     }
   }
   

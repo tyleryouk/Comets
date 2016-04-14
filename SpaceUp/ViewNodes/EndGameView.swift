@@ -62,7 +62,7 @@ class EndGameView: ModalView {
     
     // Enemies
     enemiesButtonGO.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.minY + 130)
-    enemiesButtonGO.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButton), forState: .Normal)
+    enemiesButtonGO.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButtonGO), forState: .Normal)
     //enemiesButton.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButtonToched), forState: .Active)
     modal.addChild(enemiesButtonGO)
     
