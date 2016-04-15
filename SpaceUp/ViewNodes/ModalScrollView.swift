@@ -76,7 +76,7 @@ class ModalScrollView: ModalView, UIGestureRecognizerDelegate {
     }
     
     func scrollForTranslation(theTranslation: CGPoint) {
-        var newPosition = CGPoint(x: scrollingNode.position.x, y: scrollingNode.position.y - theTranslation.y)
+        var newPosition = CGPoint(x: scrollingNode.position.x, y: scrollingNode.position.y - (theTranslation.y * 1.7))
         if newPosition.y < maxYPosition {
             newPosition = CGPoint(x: newPosition.x, y: maxYPosition)
         }
