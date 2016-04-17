@@ -154,6 +154,8 @@ class CometNode: SKSpriteNode {
     super.init(texture: nil, color: UIColor.clearColor(), size: sphere.texture!.size())
     
     // Sphere
+    sphere.xScale = 2.0
+    sphere.yScale = 2.0
     addChild(sphere)
 
     // Glow

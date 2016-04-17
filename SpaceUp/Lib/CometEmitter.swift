@@ -60,7 +60,7 @@ let currentScore: Int
       }
 
       let initialPercentage = initialPercentage.clamped(0, 1)
-        let delayDuration = duration - (duration * 5.0 + duration * 5.0 * Double(speedFactor))
+        let delayDuration = duration - (duration * 4.0 + duration * 4.0 * Double(speedFactor))
       
       var actions = [SKAction]()
       var startPosition = CGPoint(x: fromPosition.x + (toPosition.x - fromPosition.x) * initialPercentage,
