@@ -122,6 +122,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
             SKTexture(imageNamed: TextureFileName.StartLogo)
         ]
         
+        
         // Show loading scene
         presentLoadingScene(.Blank)
         

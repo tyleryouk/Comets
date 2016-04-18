@@ -34,10 +34,11 @@ class StartScene: SKScene, ButtonDelegate {
     backgroundColor = UIColor(hexString: ColorHex.BackgroundColor)
 
     // Background
-    //addChild(background)
+    galaxyStars.setScale(2.0)
     addChild(galaxyStars)
     
     // Logo
+    logo.setScale(2.0)
     logo.anchorPoint = CGPoint(x: 0.5, y: 0)
     logo.position = CGPoint(x: screenFrame.midX, y: screenFrame.midY - 140)
     addChild(logo)

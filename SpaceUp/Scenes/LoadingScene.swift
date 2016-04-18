@@ -12,8 +12,6 @@ class LoadingScene: SKScene {
   // MARK: - Vars
   lazy var backgroundPosition = CGPointZero
   lazy var loadingLabel = ShadowLabelNode(fontNamed: FontName.RegularFont)
-  //lazy var background = EndlessBackgroundNode(imageNames: [TextureFileName.Background])
-  //lazy var galaxyStars = EndlessBackgroundNode(imageNames: [TextureFileName.BackgroundStars])
   
   lazy var dotAction: SKAction = {
     return SKAction.sequence([

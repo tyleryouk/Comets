@@ -15,7 +15,7 @@ enum CometType {
       types << .Regular
     }
     
-    for _ in 0..<Int(round(levelFactor * 5)) {
+    for _ in 0..<Int(round(levelFactor * 5.0)) {
       types << .Fast
       types << .Slow
       types << .Award

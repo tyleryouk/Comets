@@ -49,7 +49,7 @@ class CometPopulator {
             texture.setScale(10.0)
             let textureSize = texture.size
             let spacing: CGFloat = EmitterVerticalSpacing
-            let initialFromOffset = CGPoint(x: -textureSize.width, y: scene.frame.height + textureSize.width * 2.0)
+            let initialFromOffset = CGPoint(x: -textureSize.width, y: scene.frame.height + textureSize.width)
             let initialToOffset = CGPoint(x: textureSize.width, y: scene.frame.height - textureSize.width)
             
             var lastToPosition: CGPoint?
