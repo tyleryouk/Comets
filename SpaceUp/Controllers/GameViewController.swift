@@ -437,45 +437,6 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
     toggleMusicForScene(gameScene, withButton: button)
   }
     
-
-    
-    /*func gameSceneDidRequestToShowEnemiesView(gameScene: GameScene, withHighestUserScore: Int) {
-       
-        gameScene.view?.paused = false
-        
-        gameScene.pauseMenu?.removeFromParent()
-        gameScene.enemiesView = gameScene.presentEnemiesGameView(withHighestUserScore)
-        
-        //MARK - Can't scroll anything if the scene is paused!
-        /*afterDelay(0.05) { [weak gameScene] in
-            gameScene!.view?.paused = true
-        }*/
-        
-        /*if (paused) {
-            self.pauseButton.hidden = true
-            gameSceneDelegate?.gameSceneDidPause?(self)
-            self.pauseMenu = presentPauseMenu()
-            self.pauseMenu?.resumeButton.delegate = self
-            afterDelay(0.1) { [weak self] in
-                self!.view?.paused = true
-            }
-        } else {
-            self.view?.paused = false
-            self.pauseButton.hidden = false
-            self.pauseMenu?.removeFromParent()
-            gameSceneDelegate?.gameSceneDidResume?(self)
-        }*/
-    }
-  
-    func gameSceneDidRequestToDismissEnemiesView(gameScene: GameScene) {
-        gameScene.view?.paused = false
-        gameScene.enemiesView?.removeGestureRecognizerFromView(view)
-        gameScene.enemiesView?.removeFromParent()
-        afterDelay(0.05) { [weak gameScene] in
-            gameScene!.view?.paused = true
-        }
-
-    }*/
     
     func gameSceneDidRequestToShowEnemiesViewGO(gameScene: GameScene, withHighestUserScore: Int) {
         

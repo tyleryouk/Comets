@@ -1,4 +1,3 @@
-
 import SpriteKit
 
 class CometPopulator {
@@ -13,8 +12,8 @@ class CometPopulator {
     
     // MARK: - Emitter
     func update() {
-                addEmittersIfNeeded()
-                removeEmittersIfNeeded()
+        addEmittersIfNeeded()
+        removeEmittersIfNeeded()
     }
     
     func addEmittersIfNeeded() {
@@ -25,18 +24,18 @@ class CometPopulator {
                 lastToPosition = scene.convertPoint(lastEmitter.toPosition, fromNode: world)
             }
             
-                    if lastToPosition?.y < scene.frame.maxY * 2 || emitters.last == nil {
-                        let type = randomCometType()
-                        let (fromPosition, toPosition) = positionForNewEmitterOfType(type)
-                        
-                        if let emitter = addEmitterOfType(type, fromPosition: fromPosition, toPosition: toPosition) {
-                            if toPosition.y > scene.frame.maxY {
-                                emitter.startEmit(speedFactor: gameData.levelFactor, initialPercentage: CGFloat.random(min: 0, max: 0.5))
-                            } else {
-                                emitter.startEmit(speedFactor: gameData.levelFactor, initialPercentage: 0)
-                            }
-                        }
-                    
+            if lastToPosition?.y < scene.frame.maxY * 2 || emitters.last == nil {
+                let type = randomCometType()
+                let (fromPosition, toPosition) = positionForNewEmitterOfType(type)
+                
+                if let emitter = addEmitterOfType(type, fromPosition: fromPosition, toPosition: toPosition) {
+                    if toPosition.y > scene.frame.maxY {
+                        emitter.startEmit(speedFactor: gameData.levelFactor, initialPercentage: CGFloat.random(min: 0, max: 0.5))
+                    } else {
+                        emitter.startEmit(speedFactor: gameData.levelFactor, initialPercentage: 0)
+                    }
+                }
+                
                 
             }
             
@@ -46,9 +45,11 @@ class CometPopulator {
     
     func positionForNewEmitterOfType(type: CometType) -> (fromPosition: CGPoint, toPosition:CGPoint) {
         if let world = world, scene = world.scene, gameData = dataSource?.gameData {
-            let textureSize = SKTexture(imageNamed: TextureFileName.CometLargeGlow).size()
+            let texture = SKSpriteNode(imageNamed: TextureFileName.CometLargeGlow)
+            texture.setScale(10.0)
+            let textureSize = texture.size
             let spacing: CGFloat = EmitterVerticalSpacing
-            let initialFromOffset = CGPoint(x: -textureSize.width, y: scene.frame.height + textureSize.width)
+            let initialFromOffset = CGPoint(x: -textureSize.width, y: scene.frame.height + textureSize.width * 2.0)
             let initialToOffset = CGPoint(x: textureSize.width, y: scene.frame.height - textureSize.width)
             
             var lastToPosition: CGPoint?
