@@ -57,6 +57,7 @@ class EndGameView: ModalView {
     modal.addChild(topScoreLabel)
     
     // Retry
+    continueButton.setScale(2.0)
     continueButton.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.minY + 330)
     modal.addChild(continueButton)
     

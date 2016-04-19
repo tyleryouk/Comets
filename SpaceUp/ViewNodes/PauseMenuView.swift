@@ -12,6 +12,7 @@ class PauseMenuView: ModalView {
         super.init(size: CGSize(width: 640, height: 640))
         
         // Resume
+        resumeButton.setScale(2.0)
         resumeButton.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.maxY - 230)
         modal.addChild(resumeButton)
 

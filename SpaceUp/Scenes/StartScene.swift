@@ -137,7 +137,7 @@ class StartScene: SKScene, ButtonDelegate {
     musicButton.scaleAsPoint = startScale
     
     let startButtonAction = SKAction.group([
-      SKTScaleEffect.scaleActionWithNode(startButton, duration: 1, startScale: startScale, endScale: (endScale / 2), timingFunction: SKTTimingFunctionBackEaseInOut),
+      SKTScaleEffect.scaleActionWithNode(startButton, duration: 1, startScale: startScale, endScale: endScale, timingFunction: SKTTimingFunctionBackEaseInOut),
       SKTAlphaEffect.alphaActionWithNode(startButton, duration: 1, startAlpha: 0, endAlpha: 1, timingFunction: SKTTimingFunctionBackEaseInOut)
     ])
 
