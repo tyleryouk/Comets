@@ -127,7 +127,8 @@ class StartScene: SKScene, ButtonDelegate {
   // MARK: - Appear
   func appear() {
     let startScale = CGPoint(x: 0.0001, y: 0.0001)
-    let endScale = CGPoint(x: 1, y: 1)
+    let endScale = CGPoint(x: 2, y: 2)
+
     
     startButton.scaleAsPoint = startScale
     leaderboardButton.scaleAsPoint = startScale
@@ -136,7 +137,7 @@ class StartScene: SKScene, ButtonDelegate {
     musicButton.scaleAsPoint = startScale
     
     let startButtonAction = SKAction.group([
-      SKTScaleEffect.scaleActionWithNode(startButton, duration: 1, startScale: startScale, endScale: endScale, timingFunction: SKTTimingFunctionBackEaseInOut),
+      SKTScaleEffect.scaleActionWithNode(startButton, duration: 1, startScale: startScale, endScale: (endScale / 2), timingFunction: SKTTimingFunctionBackEaseInOut),
       SKTAlphaEffect.alphaActionWithNode(startButton, duration: 1, startAlpha: 0, endAlpha: 1, timingFunction: SKTTimingFunctionBackEaseInOut)
     ])
 

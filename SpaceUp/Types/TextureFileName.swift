@@ -10,10 +10,8 @@ struct TextureAtlasFileName {
 }
 
 struct TextureFileName {
-    //static let StartBackground = "StartBackground"
     static let StartLogo = "StartLogo"
 
-    //static let Background = "Background"
     static let BackgroundStars = "BackgroundStars"
     static let BackgroundStars2 = "BackgroundStars2"
     static let BackgroundLargePlanets = "BackgroundLargePlanets"
@@ -30,32 +28,29 @@ struct TextureFileName {
 
     static let EngineFlame = "EngineFlame"
     
-    static let CometLarge = "CometLarge"
     static let CometLargeGlow = "CometLargeGlow"
+    static let CometLarge = "CometLarge"
     static let CometLarge2 = "CometLarge2"
-    static let CometLargeGlow2 = "CometLargeGlow2"
     static let CometLarge3 = "CometLarge3"
-    static let CometLargeGlow3 = "CometLargeGlow3"
     static let CometLarge4 = "CometLarge4"
     static let CometLarge5 = "CometLarge5"
+    static let CometLarge6 = "CometLarge6"
     
-    static let CometMedium = "CometMedium"
     static let CometMediumGlow = "CometMediumGlow"
+    static let CometMedium = "CometMedium"
     static let CometMedium2 = "CometMedium2"
-    static let CometMediumGlow2 = "CometMediumGlow2"
     static let CometMedium3 = "CometMedium3"
-    static let CometMediumGlow3 = "CometMediumGlow3"
     static let CometMedium4 = "CometMedium4"
     static let CometMedium5 = "CometMedium5"
+    static let CometMedium6 = "CometMedium6"
 
-    static let CometSmall = "CometSmall"
     static let CometSmallGlow = "CometSmallGlow"
+    static let CometSmall = "CometSmall"
     static let CometSmall2 = "CometSmall2"
-    static let CometSmallGlow2 = "CometSmallGlow2"
     static let CometSmall3 = "CometSmall3"
-    static let CometSmallGlow3 = "CometSmallGlow3"
     static let CometSmall4 = "CometSmall4"
     static let CometSmall5 = "CometSmall5"
+    static let CometSmall6 = "CometSmall6"
     
     static let CometStar = "CometStar"
     static let CometStarGlow = "CometStarGlow"
@@ -86,9 +81,7 @@ struct TextureFileName {
     static let CrackedLarge = "CrackedLarge"
     static let Explosion = "Explosion"
     
-    //static let kEnemiesButton = "buttonfinished"
     static let kEnemiesButtonGO = "buttonfinishedGO"
-    //static let kEnemiesButtonTouched = "buttontouched"
     static let kBarackObama = "BarackObama"
     static let kBernieSanders = "BernieSanders"
     static let kFloRida = "FloRida"
@@ -107,5 +100,6 @@ struct TextureFileName {
     static let kJohnOliver = "JohnO"
     static let kNBC = "NBC"
     static let kJohnKasich = "JohnKasich"
+    static let kMexico = "Mexico"
     static let kCloseEnemiesViewButton = "closeEnemiesViewButton"
 }

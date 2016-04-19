@@ -41,21 +41,24 @@ class PlayerNode: SKSpriteNode {
   private lazy var popSoundAction = SKAction.playSoundFileNamed(SoundFileName.Pop, waitForCompletion: false)
   
   private lazy var moveUpAnimateAction: SKAction = {
-    let textures = texturesWithName(TextureFileName.MuffyFlying, fromIndex: 1, toIndex: 2)
+    let textures = texturesWithName(TextureFileName.MuffyFlying, fromIndex: 1, toIndex: 1)
 
-    return SKAction.animateWithTextures(textures, timePerFrame: 1/30)
+    return SKAction.animateWithTextures(textures, timePerFrame: 100)
   }()
   
   private lazy var stopMoveUpAnimateAction: SKAction = {
-    let textures = texturesWithName(TextureFileName.MuffyStopFlying, fromIndex: 1, toIndex: 2)
+    let textures = texturesWithName(TextureFileName.MuffyStopFlying, fromIndex: 1, toIndex: 1)
 
-    return SKAction.animateWithTextures(textures, timePerFrame: 1/30)
+    return SKAction.animateWithTextures(textures, timePerFrame: 100)
   }()
   
   private lazy var killAnimateAction: SKAction = {
-    let textures = texturesWithName(TextureFileName.MuffyDead, fromIndex: 1, toIndex: 5)
-
-    return SKAction.animateWithTextures(textures, timePerFrame: 1/30)
+    let textures = texturesWithName(TextureFileName.MuffyDead, fromIndex: 1, toIndex: 1)
+    
+    //How it's supposed to be -
+    //let textures = texturesWithName(TextureFileName.MuffyDead, fromIndex: 1, toIndex: 5)
+    //return SKAction.animateWithTextures(textures, timePerFrame: 1/30)
+    return SKAction.animateWithTextures(textures, timePerFrame: 100)
   }()
   
   private lazy var killRotationAction: SKAction = {
@@ -67,7 +70,7 @@ class PlayerNode: SKSpriteNode {
   }()
   
   private lazy var standAnimateAction: SKAction = {
-    let textures = texturesWithName(TextureFileName.MuffyStanding, fromIndex: 1, toIndex: 3, reversed: true)
+    let textures = texturesWithName(TextureFileName.MuffyStanding, fromIndex: 1, toIndex: 1, reversed: true)
     let blinkAction = SKAction.animateWithTextures(textures, timePerFrame: 1/30)
     
     let idleAction = SKAction.sequence([

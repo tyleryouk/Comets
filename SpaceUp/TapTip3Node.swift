@@ -25,6 +25,7 @@ class TapTipNode3: SKNode {
     override init() {
         super.init()
         
+        hand.setScale(2.0)
         hand.anchorPoint = CGPoint(x: 0.5, y: 0)
         addChild(hand)
         

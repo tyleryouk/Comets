@@ -152,11 +152,6 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
         ]
         
         let textures: [SKTexture] = [
-            //SKTexture(imageNamed: TextureFileName.Background),
-            //SKTexture(imageNamed: TextureFileName.BackgroundSmallPlanets),
-            //SKTexture(imageNamed: TextureFileName.BackgroundSmallPlanets, index: 2),
-            //SKTexture(imageNamed: TextureFileName.BackgroundLargePlanets),
-            //SKTexture(imageNamed: TextureFileName.BackgroundLargePlanets, index: 2),
             SKTexture(imageNamed: TextureFileName.BackgroundStars),
             SKTexture(imageNamed: TextureFileName.PlanetGround)
         ]

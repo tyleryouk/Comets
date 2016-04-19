@@ -64,14 +64,16 @@ class EndGameView: ModalView {
     enemiesButtonGO.position = CGPoint(x: modalBackground.frame.midX, y: modalBackground.frame.minY + 130)
     enemiesButtonGO.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButtonGO), forState: .Normal)
     //enemiesButton.setTexture(SKTexture(imageNamed: TextureFileName.kEnemiesButtonToched), forState: .Active)
-    enemiesButtonGO.setScale(2.0)
+    enemiesButtonGO.setScale(1.0)
     modal.addChild(enemiesButtonGO)
     
     // Quit
+    quitButton.setScale(2.0)
     quitButton.position = CGPoint(x: modalBackground.frame.maxX - 90, y: modalBackground.frame.minY + 130)
     modal.addChild(quitButton)
     
     // Leaderboard
+    leaderboardButton.setScale(2.0)
     leaderboardButton.position = CGPoint(x: modalBackground.frame.minX + 90, y: modalBackground.frame.minY + 130)
     modal.addChild(leaderboardButton)
   }
@@ -93,6 +95,7 @@ class EndGameView: ModalView {
     
     // Reposition
     if hasNewTopScore {
+      newLabel.setScale(2.0)
       newLabel.anchorPoint = CGPoint(x: 0.5, y: 0)
       newLabel.position = CGPoint(x: modalBackground.frame.midX - newLabel.frame.width / 2 - 10,
                                   y: topScoreCaptionLabel.position.y - 10)

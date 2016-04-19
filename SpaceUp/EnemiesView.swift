@@ -14,15 +14,16 @@ class EnemiesView : ModalScrollView {
     let fourthImage = SpriteButtonNode(imageNamed: TextureFileName.kMegyn)
     let fifthImage = SpriteButtonNode(imageNamed: TextureFileName.kMacMiller)
     let sixthImage = SpriteButtonNode(imageNamed: TextureFileName.kBeckyG)
-    let seventhImage = SpriteButtonNode(imageNamed: TextureFileName.kHeidiCruz)
+    let seventhImage = SpriteButtonNode(imageNamed: TextureFileName.kJohnOliver)
     let eighthImage = SpriteButtonNode(imageNamed: TextureFileName.kSNL)
-    let ninethImage = SpriteButtonNode(imageNamed: TextureFileName.kJohnOliver)
+    let ninethImage = SpriteButtonNode(imageNamed: TextureFileName.kHeidiCruz)
     let tenthImage = SpriteButtonNode(imageNamed: TextureFileName.kBernieSanders)
     let eleventhImage = SpriteButtonNode(imageNamed: TextureFileName.kBarackObama)
     let twelvthImage = SpriteButtonNode(imageNamed: TextureFileName.kJebBush)
     let thirteenthImage = SpriteButtonNode(imageNamed: TextureFileName.kJohnKasich)
     let fourteenthImage = SpriteButtonNode(imageNamed: TextureFileName.kNBC)
     let fifteenthImage = SpriteButtonNode(imageNamed: TextureFileName.kFloRida)
+    let sixteenthImage = SpriteButtonNode(imageNamed: TextureFileName.kMexico)
    
     let spriteImagesArray: Array<SpriteButtonNode>
     
@@ -44,9 +45,10 @@ class EnemiesView : ModalScrollView {
         self.thirteenthImage.setScale(2.1)
         self.fourteenthImage.setScale(2.1)
         self.fifteenthImage.setScale(2.1)
+        self.sixteenthImage.setScale(2.1)
         self.exitButton.setScale(2.0)
         
-        spriteImagesArray = [self.firstImage, self.secondImage, self.thirdImage, self.fourthImage, self.fifthImage, self.sixthImage, self.seventhImage, self.eighthImage, self.ninethImage, self.tenthImage, self.eleventhImage, self.twelvthImage, self.thirteenthImage, self.fourteenthImage, self.fifteenthImage]
+        spriteImagesArray = [self.firstImage, self.secondImage, self.thirdImage, self.fourthImage, self.fifthImage, self.sixthImage, self.seventhImage, self.eighthImage, self.ninethImage, self.tenthImage, self.eleventhImage, self.twelvthImage, self.thirteenthImage, self.fourteenthImage, self.fifteenthImage, self.sixteenthImage]
         self.highestUserScore = overallHighestUserScore
         super.init(size: CGSize(width: 640, height: 1000))
         
@@ -86,38 +88,38 @@ class EnemiesView : ModalScrollView {
         scrollingNode.addChild(fourthTextLabel)
         
         //2 - 0
-        let fifthImage = self.createNewImageRequiredPoints(140, position: 4, xPosition: -range, yPosition: -250)
+        let fifthImage = self.createNewImageRequiredPoints(150, position: 4, xPosition: -range, yPosition: -250)
         scrollingNode.addChild(fifthImage)
-        let fifthTextLabel = self.createNewLabelWithPoints(140, name:"Mac Miller", xPosition: -range, yPosition: -390)
+        let fifthTextLabel = self.createNewLabelWithPoints(150, name:"Mac Miller", xPosition: -range, yPosition: -390)
         scrollingNode.addChild(fifthTextLabel)
         
         //2 - 1
-        let sixthImage = self.createNewImageRequiredPoints(160, position: 5, xPosition: range, yPosition: -250)
+        let sixthImage = self.createNewImageRequiredPoints(170, position: 5, xPosition: range, yPosition: -250)
         scrollingNode.addChild(sixthImage)
         
-        let sixthTextLabel = self.createNewLabelWithPoints(160, name:"Becky G", xPosition: range, yPosition: -390)
+        let sixthTextLabel = self.createNewLabelWithPoints(170, name:"Becky G", xPosition: range, yPosition: -390)
         scrollingNode.addChild(sixthTextLabel)
         
         //3 - 0
         let seventhImage = self.createNewImageRequiredPoints(220, position: 6, xPosition: -range, yPosition: -525)
         scrollingNode.addChild(seventhImage)
         
-        let seventhTextLabel = self.createNewLabelWithPoints(220, name:"Heidi Cruz", xPosition: -range, yPosition: -665)
+        let seventhTextLabel = self.createNewLabelWithPoints(220, name:"John Oliver", xPosition: -range, yPosition: -665)
         scrollingNode.addChild(seventhTextLabel)
         
         //3 - 1
-        let eightImage = self.createNewImageRequiredPoints(240, position: 7, xPosition: range, yPosition: -525)
+        let eightImage = self.createNewImageRequiredPoints(250, position: 7, xPosition: range, yPosition: -525)
         scrollingNode.addChild(eightImage)
         
-        let eightTextLabel = self.createNewLabelWithPoints(240, name:"SNL", xPosition: range - 10, yPosition: -665)
+        let eightTextLabel = self.createNewLabelWithPoints(250, name:"SNL", xPosition: range - 10, yPosition: -665)
         scrollingNode.addChild(eightTextLabel)
         
        
         //4
-        let ninthImage = self.createNewImageRequiredPoints(250, position: 8, xPosition:-range, yPosition: -800)
+        let ninthImage = self.createNewImageRequiredPoints(280, position: 8, xPosition:-range, yPosition: -800)
         scrollingNode.addChild(ninthImage)
         
-        let ninthTextLabel = self.createNewLabelWithPoints(250, name:"John Oliver", xPosition: -range, yPosition: -940)
+        let ninthTextLabel = self.createNewLabelWithPoints(280, name:"Heidi Cruz", xPosition: -range, yPosition: -940)
         scrollingNode.addChild(ninthTextLabel)
         
         //4 - 1
@@ -128,17 +130,17 @@ class EnemiesView : ModalScrollView {
         scrollingNode.addChild(tenthTextLabel)
         
         //5
-        let eleventhImage = self.createNewImageRequiredPoints(335, position: 10, xPosition:-range, yPosition: -1075)
+        let eleventhImage = self.createNewImageRequiredPoints(350, position: 10, xPosition:-range, yPosition: -1075)
         scrollingNode.addChild(eleventhImage)
         
-        let eleventhTextLabel = self.createNewLabelWithPoints(335, name:"Barack Obama", xPosition: -range, yPosition: -1215)
+        let eleventhTextLabel = self.createNewLabelWithPoints(350, name:"Barack Obama", xPosition: -range, yPosition: -1215)
         scrollingNode.addChild(eleventhTextLabel)
         
         //5 - 1
-        let twelvthImage = self.createNewImageRequiredPoints(360, position: 11, xPosition: range, yPosition: -1075)
+        let twelvthImage = self.createNewImageRequiredPoints(380, position: 11, xPosition: range, yPosition: -1075)
         scrollingNode.addChild(twelvthImage)
         
-        let twelvthTextLabel = self.createNewLabelWithPoints(360, name:"Jeb Bush", xPosition: range, yPosition: -1215)
+        let twelvthTextLabel = self.createNewLabelWithPoints(380, name:"Jeb Bush", xPosition: range, yPosition: -1215)
         scrollingNode.addChild(twelvthTextLabel)
         
         //6
@@ -149,18 +151,25 @@ class EnemiesView : ModalScrollView {
         scrollingNode.addChild(thirteenthTextLabel)
         
         //6 - 1
-        let fourteenthImage = self.createNewImageRequiredPoints(440, position: 13, xPosition: range, yPosition: -1350)
+        let fourteenthImage = self.createNewImageRequiredPoints(450, position: 13, xPosition: range, yPosition: -1350)
         scrollingNode.addChild(fourteenthImage)
         
-        let fourteenthTextLabel = self.createNewLabelWithPoints(440, name:"NBC", xPosition: range, yPosition: -1490)
+        let fourteenthTextLabel = self.createNewLabelWithPoints(450, name:"NBC", xPosition: range, yPosition: -1490)
         scrollingNode.addChild(fourteenthTextLabel)
         
-        //7
+        //7 - 1
         let fifteenthImage = self.createNewImageRequiredPoints(470, position: 14, xPosition:-range, yPosition: -1625)
         scrollingNode.addChild(fifteenthImage)
         
         let fifteenthTextLabel = self.createNewLabelWithPoints(470, name:"Flo Rida", xPosition: -range, yPosition: -1765)
         scrollingNode.addChild(fifteenthTextLabel)
+        
+        //8 - 1
+        let sixteenthImage = self.createNewImageRequiredPoints(600, position: 15, xPosition: range, yPosition: -1625)
+        scrollingNode.addChild(sixteenthImage)
+        
+        let sixteenthTextLabel = self.createNewLabelWithPoints(600, name:"Mexico", xPosition: range, yPosition: -1765)
+        scrollingNode.addChild(sixteenthTextLabel)
         
     }
     
