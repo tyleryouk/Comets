@@ -61,7 +61,37 @@ class CometNode: SKSpriteNode {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge5)
             }  else if (currentScore > 420 && currentScore <= 525) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge6)
-            }  else {
+            }  else if (currentScore > 525 && currentScore <= 600) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge7)
+            }  else if (currentScore > 600 && currentScore <= 700) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge8)
+            }  else if (currentScore > 700 && currentScore <= 875) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge9)
+            }  else if (currentScore > 875 && currentScore <= 1000) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge10)
+            }  else if (currentScore > 1000 && currentScore <= 1200) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge11)
+            }  else if (currentScore > 1200 && currentScore <= 1250) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge12)
+            }  else if (currentScore > 1250 && currentScore <= 1300) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge13)
+            }  else if (currentScore > 1300 && currentScore <= 1500) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge14)
+            }  else if (currentScore > 1500 && currentScore <= 1600) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge15)
+            }  else if (currentScore > 1600 && currentScore <= 1640) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge19)
+            }  else if (currentScore > 1640 && currentScore <= 1680) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge17)
+            }  else if (currentScore > 1680 && currentScore <= 1730) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge18)
+            }  else if (currentScore > 1730 && currentScore <= 2000) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge16)
+            }  else if (currentScore > 2000 && currentScore <= 2300) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge23)
+            }  else if (currentScore > 2300 && currentScore <= 2500) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge21)
+            }   else {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge)
             }
             
@@ -77,13 +107,43 @@ class CometNode: SKSpriteNode {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge2)
             } else if (currentScore > 150 && currentScore <= 250) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge3)
-            } else if (currentScore > 250 && currentScore <= 320) {
+            }  else if (currentScore > 250 && currentScore <= 320) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge4)
             }  else if (currentScore > 320 && currentScore <= 420) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge5)
             }  else if (currentScore > 420 && currentScore <= 525) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge6)
-            } else {
+            }  else if (currentScore > 525 && currentScore <= 600) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge7)
+            }  else if (currentScore > 600 && currentScore <= 700) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge8)
+            }  else if (currentScore > 700 && currentScore <= 875) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge9)
+            }  else if (currentScore > 875 && currentScore <= 1000) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge10)
+            }  else if (currentScore > 1000 && currentScore <= 1200) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge11)
+            }  else if (currentScore > 1200 && currentScore <= 1250) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge12)
+            }  else if (currentScore > 1250 && currentScore <= 1300) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge13)
+            }  else if (currentScore > 1300 && currentScore <= 1500) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge14)
+            }  else if (currentScore > 1500 && currentScore <= 1600) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge15)
+            }  else if (currentScore > 1600 && currentScore <= 1640) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge19)
+            }  else if (currentScore > 1640 && currentScore <= 1680) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge17)
+            }  else if (currentScore > 1680 && currentScore <= 1730) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge18)
+            }  else if (currentScore > 1730 && currentScore <= 2000) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge16)
+            }  else if (currentScore > 2000 && currentScore <= 2300) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge22)
+            }  else if (currentScore > 2300 && currentScore <= 2500) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge21)
+            }   else {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge)
             }
             
@@ -105,13 +165,43 @@ class CometNode: SKSpriteNode {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge2)
             } else if (currentScore > 150 && currentScore <= 250) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge3)
-            } else if (currentScore > 250 && currentScore <= 320) {
+            }  else if (currentScore > 250 && currentScore <= 320) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge4)
-            } else if (currentScore > 320 && currentScore <= 420) {
+            }  else if (currentScore > 320 && currentScore <= 420) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge5)
-            } else if (currentScore > 420 && currentScore <= 525) {
+            }  else if (currentScore > 420 && currentScore <= 525) {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge6)
-            } else {
+            }  else if (currentScore > 525 && currentScore <= 600) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge7)
+            }  else if (currentScore > 600 && currentScore <= 700) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge8)
+            }  else if (currentScore > 700 && currentScore <= 875) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge9)
+            }  else if (currentScore > 875 && currentScore <= 1000) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge10)
+            }  else if (currentScore > 1000 && currentScore <= 1200) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge11)
+            }  else if (currentScore > 1200 && currentScore <= 1250) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge12)
+            }  else if (currentScore > 1250 && currentScore <= 1300) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge13)
+            }  else if (currentScore > 1300 && currentScore <= 1500) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge14)
+            }  else if (currentScore > 1500 && currentScore <= 1600) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge15)
+            }  else if (currentScore > 1600 && currentScore <= 1640) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge19)
+            }  else if (currentScore > 1640 && currentScore <= 1680) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge17)
+            }  else if (currentScore > 1680 && currentScore <= 1730) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge18)
+            }  else if (currentScore > 1730 && currentScore <= 2000) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge16)
+            }  else if (currentScore > 2000 && currentScore <= 2300) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge20)
+            }  else if (currentScore > 2300 && currentScore <= 2500) {
+                sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge21)
+            }   else {
                 sphere = SKSpriteNode(imageNamed: TextureFileName.CometLarge)
             }
             
