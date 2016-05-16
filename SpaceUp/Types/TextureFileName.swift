@@ -1,7 +1,6 @@
 
 
 import Foundation
-//import Haneke
 
 struct TextureAtlasFileName {
   static let Environment = "Environment"
@@ -44,14 +43,6 @@ struct TextureFileName {
     static let CometLarge13 = "CometLarge13"
     static let CometLarge14 = "CometLarge14"
     static let CometLarge15 = "CometLarge15"
-    static let CometLarge16 = "CometLarge16"
-    static let CometLarge17 = "CometLarge17"
-    static let CometLarge18 = "CometLarge18"
-    static let CometLarge19 = "CometLarge19"
-    static let CometLarge20 = "CometLarge20"
-    static let CometLarge21 = "CometLarge21"
-    static let CometLarge22 = "CometLarge22"
-    static let CometLarge23 = "CometLarge23"
     
     static let CometMediumGlow = "CometMediumGlow"
 
@@ -88,7 +79,7 @@ struct TextureFileName {
     
     static let kEnemiesButtonGO = "buttonfinishedGO"
     
-    static let kHilaryClinton = "HilaryClinton"
+    static let kHilaryClinton = "HillaryClinton"
     static let kTedCruz = "TedCruz"
     static let kBarackObama = "BarackObama"
     static let kJohnKasich = "JohnKasich"
@@ -102,9 +93,10 @@ struct TextureFileName {
     static let kJohnOliver = "JohnO"
     static let kStephen = "StephenColbert"
     static let kjohnMccain = "JohnMccain"
-    static let kMexico = "Mexico"
-    static let kislala = "islala"
-    static let kHeidiCruz = "HeidiCruz"
+    static let kIvanka = "Ivanka"
+    static let kUnlocked1x = "unlocked1x"
+    static let kUnlocked2x = "unlocked2x"
+    static let kUnlocked3x = "unlocked3x"
     static let kNoImage = "officialquestion"
     static let kCloseEnemiesViewButton = "closeEnemiesViewButton"
 }
