@@ -61,7 +61,6 @@ class StartScene: SKScene, ButtonDelegate {
     // Sound button
     soundButton.setTexture(SKTexture(imageNamed: TextureFileName.ButtonSoundOff), forState: .Active)
     soundButton.state = isSoundEnabled() ? .Normal : .Active
-    soundButton.delegate = self
     addChild(soundButton)
     
     // Ad button

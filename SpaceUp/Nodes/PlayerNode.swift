@@ -41,14 +41,13 @@ class PlayerNode: SKSpriteNode {
   private lazy var popSoundAction = SKAction.playSoundFileNamed(SoundFileName.Pop, waitForCompletion: false)
   
   private lazy var moveUpAnimateAction: SKAction = {
-    let textures = texturesWithName(TextureFileName.MuffyFlying, fromIndex: 1, toIndex: 1)
-
+    let textures = texturesWithName(TextureFileName.MuffyFlying, fromIndex:  1, toIndex: 1)
+    
     return SKAction.animateWithTextures(textures, timePerFrame: 100)
   }()
   
   private lazy var stopMoveUpAnimateAction: SKAction = {
     let textures = texturesWithName(TextureFileName.MuffyStopFlying, fromIndex: 1, toIndex: 1)
-
     return SKAction.animateWithTextures(textures, timePerFrame: 100)
   }()
   

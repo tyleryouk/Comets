@@ -32,24 +32,24 @@ class EnemiesView : ModalScrollView {
     // MARK: - Init
     init(overallHighestUserScore: Int) {
         
-        self.firstImage.setScale(2.1)
-        self.secondImage.setScale(2.1)
-        self.thirdImage.setScale(2.1)
-        self.fourthImage.setScale(2.1)
-        self.fifthImage.setScale(2.1)
-        self.sixthImage.setScale(2.1)
-        self.seventhImage.setScale(2.1)
-        self.eighthImage.setScale(2.1)
-        self.ninethImage.setScale(2.1)
-        self.tenthImage.setScale(2.1)
-        self.eleventhImage.setScale(2.1)
-        self.twelvthImage.setScale(2.1)
-        self.thirteenthImage.setScale(2.1)
-        self.fourteenthImage.setScale(2.1)
-        self.fifteenthImage.setScale(2.1)
-        self.sixteenthImage.setScale(2.1)
-        self.seventeenthImage.setScale(2.1)
-        self.eighteenthImage.setScale(2.1)
+        self.firstImage.setScale(3.0)
+        self.secondImage.setScale(3.0)
+        self.thirdImage.setScale(3.0)
+        self.fourthImage.setScale(3.0)
+        self.fifthImage.setScale(3.0)
+        self.sixthImage.setScale(3.0)
+        self.seventhImage.setScale(3.0)
+        self.eighthImage.setScale(3.0)
+        self.ninethImage.setScale(3.0)
+        self.tenthImage.setScale(3.0)
+        self.eleventhImage.setScale(3.0)
+        self.twelvthImage.setScale(3.0)
+        self.thirteenthImage.setScale(3.0)
+        self.fourteenthImage.setScale(3.0)
+        self.fifteenthImage.setScale(3.0)
+        self.sixteenthImage.setScale(3.0)
+        self.seventeenthImage.setScale(3.0)
+        self.eighteenthImage.setScale(3.0)
         self.exitButton.setScale(2.0)
         
         spriteImagesArray = [self.firstImage, self.secondImage, self.thirdImage, self.fourthImage, self.fifthImage, self.sixthImage, self.seventhImage, self.eighthImage, self.ninethImage, self.tenthImage, self.eleventhImage, self.twelvthImage, self.thirteenthImage, self.fourteenthImage, self.fifteenthImage, self.sixteenthImage, self.seventeenthImage, self.eighteenthImage]
@@ -172,14 +172,22 @@ class EnemiesView : ModalScrollView {
         let sixteenthImage = self.createNewImageRequiredPoints(1000, position: 15, xPosition: range, yPosition: -1625)
         scrollingNode.addChild(sixteenthImage)
         
+        let sixteenthTextLabel = self.createNewLabelWithPoints(1000, name:"Unlock All", xPosition: range, yPosition: -1765)
+        scrollingNode.addChild(sixteenthTextLabel)
+        
         //8 - 1
         let seventeenthImage = self.createNewImageRequiredPoints(2000, position: 16, xPosition: -range, yPosition: -1900)
         scrollingNode.addChild(seventeenthImage)
+        
+        let seventeenthTextLabel = self.createNewLabelWithPoints(2000, name:"Unlock All 2x", xPosition: -range, yPosition: -2040)
+        scrollingNode.addChild(seventeenthTextLabel)
         
         //8 - 2
         let eighteenthImage = self.createNewImageRequiredPoints(3000, position: 17, xPosition: range, yPosition: -1900)
         scrollingNode.addChild(eighteenthImage)
         
+        let eighteenthTextLabel = self.createNewLabelWithPoints(3000, name:"Unlock All 3x", xPosition: range, yPosition: -2040)
+        scrollingNode.addChild(eighteenthTextLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -211,7 +219,7 @@ class EnemiesView : ModalScrollView {
         }
         let defaultImage = SpriteButtonNode(imageNamed: TextureFileName.kNoImage)
         defaultImage.position = CGPoint(x: xPosition, y: yPosition)
-        defaultImage.setScale(2.1)
+        defaultImage.setScale(3.0)
         return defaultImage
     }
     

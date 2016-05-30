@@ -108,6 +108,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
         
         gameData.shouldShowTip2 = false
     }
+    
+    if gameData.shouldShowTip3 {
+        self.tip3 = TapTipNode3()
+        self.tip3!.position = CGPoint(x: self.screenFrame.midX + 175, y: self.screenFrame.midY + 180)
+        self.tip3!.zPosition = 3
+        self.tip3!.alpha = 0
+        self.tip3!.appearWithDuration(0.5)
+        self.addChild(self.tip3!)
+        
+        self.gameData.shouldShowTip3 = false
+    }
 
     
     // Notification
@@ -186,29 +197,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
 
     
     if let tip2 = tip2 {
-        delay(5.0){
+        delay(2.5){
         tip2.removeWithDuration(0.5) {
             self.tip2 = nil
         }
         }
     }
     
-    if gameData.shouldShowTip3 {
-        delay(0.5){
-            self.tip3 = TapTipNode3()
-            self.tip3!.position = CGPoint(x: self.screenFrame.midX + 175, y: self.screenFrame.midY + 180)
-            self.tip3!.zPosition = 3
-            self.tip3!.alpha = 0
-            self.tip3!.appearWithDuration(0.5)
-            self.addChild(self.tip3!)
-            
-            self.gameData.shouldShowTip3 = false
-        }
-    }
-    
     
     if let tip3 = tip3 {
-        delay(3.5){
+        delay(2.5){
             tip3.removeWithDuration(0.5) {
                 self.tip3 = nil
             }
@@ -492,7 +490,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         if (interstitial!.isReady) {
-            interstitial!.presentFromRootViewController(appDelegate.viewController)
+            interstitial!.presentFromRootViewController(appDelegate.viewController!)
         }
         
         SetupAdmob()
