@@ -9,9 +9,9 @@ class StartScene: SKScene, ButtonDelegate {
   let logo = SKSpriteNode(imageNamed: TextureFileName.StartLogo)
   let startButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonPlay)
   let leaderboardButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonLeaderboard)
-  let soundButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonSound)
+  //let soundButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonSound)
   let musicButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonMusic)
-  let storeButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonAd)
+  //let storeButton = SpriteButtonNode(imageNamed: TextureFileName.ButtonAd)
 
   // MARK: - Vars
   weak var startSceneDelegate: StartSceneDelegate?
@@ -59,13 +59,13 @@ class StartScene: SKScene, ButtonDelegate {
     addChild(musicButton)
     
     // Sound button
-    soundButton.setTexture(SKTexture(imageNamed: TextureFileName.ButtonSoundOff), forState: .Active)
-    soundButton.state = isSoundEnabled() ? .Normal : .Active
-    addChild(soundButton)
+    //soundButton.setTexture(SKTexture(imageNamed: TextureFileName.ButtonSoundOff), forState: .Active)
+    //soundButton.state = isSoundEnabled() ? .Normal : .Active
+    //addChild(soundButton)
     
     // Ad button
-    storeButton.delegate = self
-    addChild(storeButton)
+    //storeButton.delegate = self
+    //addChild(storeButton)
     
     // Layout
     updateLayout()
@@ -100,27 +100,27 @@ class StartScene: SKScene, ButtonDelegate {
       offset = CGPoint(x: 10, y: 30)
     }
 
-    if isAdsEnabled() {
-      leaderboardButton.position = CGPoint(x: startButton.frame.midX - (240 + offset.x),
-                                           y: startButton.frame.midY - (45 + offset.y))
-      musicButton.position = CGPoint(x: startButton.frame.midX + (240 + offset.x),
-                                     y: startButton.frame.midY - (45 + offset.y))
-      soundButton.position = CGPoint(x: startButton.frame.midX + 110,
-                                     y: startButton.frame.midY - (200 + offset.y))
-      storeButton.position = CGPoint(x: startButton.frame.midX - 110,
-                                     y: startButton.frame.midY - (200 + offset.y))
+    //if isAdsEnabled() {
+      leaderboardButton.position = CGPoint(x: startButton.frame.midX - (160 + offset.x),
+                                           y: startButton.frame.midY - (160 + offset.y))
+      musicButton.position = CGPoint(x: startButton.frame.midX + (160 + offset.x),
+                                     y: startButton.frame.midY - (160 + offset.y))
+      //soundButton.position = CGPoint(x: startButton.frame.midX + 110,
+      //                               y: startButton.frame.midY - (200 + offset.y))
+      //storeButton.position = CGPoint(x: startButton.frame.midX - 110,
+       //                              y: startButton.frame.midY - (200 + offset.y))
       
-      addChildIfNeeded(storeButton)
-    } else {
-      leaderboardButton.position = CGPoint(x: startButton.frame.midX - (220 + offset.x),
-                                           y: startButton.frame.midY - (80 + offset.y))
-      musicButton.position = CGPoint(x: startButton.frame.midX + (220 + offset.x),
-                                     y: startButton.frame.midY - (80 + offset.y))
-      soundButton.position = CGPoint(x: startButton.frame.midX,
-                                     y: startButton.frame.midY - (200 + offset.y))
+      //addChildIfNeeded(storeButton)
+    //} else {
+      //leaderboardButton.position = CGPoint(x: startButton.frame.midX - (220 + offset.x),
+                                          // y: startButton.frame.midY - (80 + offset.y))
+      //musicButton.position = CGPoint(x: startButton.frame.midX + (220 + offset.x),
+                                    // y: startButton.frame.midY - (80 + offset.y))
+      //soundButton.position = CGPoint(x: startButton.frame.midX,
+      //                               y: startButton.frame.midY - (200 + offset.y))
     
-      storeButton.removeFromParentIfNeeded()
-    }
+      //storeButton.removeFromParentIfNeeded()
+    //}
   }
   
   // MARK: - Appear
@@ -131,8 +131,8 @@ class StartScene: SKScene, ButtonDelegate {
     
     startButton.scaleAsPoint = startScale
     leaderboardButton.scaleAsPoint = startScale
-    soundButton.scaleAsPoint = startScale
-    storeButton.scaleAsPoint = startScale
+    //soundButton.scaleAsPoint = startScale
+    //storeButton.scaleAsPoint = startScale
     musicButton.scaleAsPoint = startScale
     
     let startButtonAction = SKAction.group([
@@ -145,7 +145,7 @@ class StartScene: SKScene, ButtonDelegate {
       SKTAlphaEffect.alphaActionWithNode(leaderboardButton, duration: 1, startAlpha: 0, endAlpha: 1, timingFunction: SKTTimingFunctionBackEaseInOut)
     ])
 
-    let soundButtonAction = SKAction.group([
+    /*let soundButtonAction = SKAction.group([
       SKTScaleEffect.scaleActionWithNode(soundButton, duration: 1, startScale: startScale, endScale: endScale, timingFunction: SKTTimingFunctionBackEaseInOut),
       SKTAlphaEffect.alphaActionWithNode(soundButton, duration: 1, startAlpha: 0, endAlpha: 1, timingFunction: SKTTimingFunctionBackEaseInOut)
     ])
@@ -153,7 +153,7 @@ class StartScene: SKScene, ButtonDelegate {
     let storeButtonAction = SKAction.group([
       SKTScaleEffect.scaleActionWithNode(storeButton, duration: 1, startScale: startScale, endScale: endScale, timingFunction: SKTTimingFunctionBackEaseInOut),
       SKTAlphaEffect.alphaActionWithNode(storeButton, duration: 1, startAlpha: 0, endAlpha: 1, timingFunction: SKTTimingFunctionBackEaseInOut)
-    ])
+    ])*/
 
     let musicButtonAction = SKAction.group([
       SKTScaleEffect.scaleActionWithNode(musicButton, duration: 1, startScale: startScale, endScale: endScale, timingFunction: SKTTimingFunctionBackEaseInOut),
@@ -163,9 +163,9 @@ class StartScene: SKScene, ButtonDelegate {
     runAction(SKAction.group([
       SKAction.afterDelay(0, performAction: startButtonAction),
       SKAction.afterDelay(0.1, performAction: leaderboardButtonAction),
-      SKAction.afterDelay(0.2, performAction: storeButtonAction),
-      SKAction.afterDelay(0.3, performAction: soundButtonAction),
-      SKAction.afterDelay(0.4, performAction: musicButtonAction)
+      //SKAction.afterDelay(0.2, performAction: storeButtonAction),
+      //SKAction.afterDelay(0.3, performAction: soundButtonAction),
+      SKAction.afterDelay(0.2, performAction: musicButtonAction)
     ]))
   }
   
@@ -198,14 +198,14 @@ class StartScene: SKScene, ButtonDelegate {
     case leaderboardButton:
       startSceneDelegate?.startSceneDidRequestLeaderboard?(self)
       
-    case soundButton:
-      startSceneDelegate?.startSceneDidRequestToggleSound?(self, withButton: soundButton)
+    //case soundButton:
+    //  startSceneDelegate?.startSceneDidRequestToggleSound?(self, withButton: soundButton)
       
     case musicButton:
       startSceneDelegate?.startSceneDidRequestToggleMusic?(self, withButton: musicButton)
       
-    case storeButton:
-      startSceneDelegate?.startSceneDidRequestStore?(self)
+    //case storeButton:
+    //  startSceneDelegate?.startSceneDidRequestStore?(self)
       
     default:
       if button == storeView?.closeButton {
