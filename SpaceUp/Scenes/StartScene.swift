@@ -100,27 +100,11 @@ class StartScene: SKScene, ButtonDelegate {
       offset = CGPoint(x: 10, y: 30)
     }
 
-    //if isAdsEnabled() {
       leaderboardButton.position = CGPoint(x: startButton.frame.midX - (160 + offset.x),
                                            y: startButton.frame.midY - (160 + offset.y))
       musicButton.position = CGPoint(x: startButton.frame.midX + (160 + offset.x),
                                      y: startButton.frame.midY - (160 + offset.y))
-      //soundButton.position = CGPoint(x: startButton.frame.midX + 110,
-      //                               y: startButton.frame.midY - (200 + offset.y))
-      //storeButton.position = CGPoint(x: startButton.frame.midX - 110,
-       //                              y: startButton.frame.midY - (200 + offset.y))
-      
-      //addChildIfNeeded(storeButton)
-    //} else {
-      //leaderboardButton.position = CGPoint(x: startButton.frame.midX - (220 + offset.x),
-                                          // y: startButton.frame.midY - (80 + offset.y))
-      //musicButton.position = CGPoint(x: startButton.frame.midX + (220 + offset.x),
-                                    // y: startButton.frame.midY - (80 + offset.y))
-      //soundButton.position = CGPoint(x: startButton.frame.midX,
-      //                               y: startButton.frame.midY - (200 + offset.y))
     
-      //storeButton.removeFromParentIfNeeded()
-    //}
   }
   
   // MARK: - Appear

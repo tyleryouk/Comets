@@ -4,7 +4,7 @@ import GameKit
 import StoreKit
 import CoreMotion
 
-class GameViewController: UIViewController, GKGameCenterControllerDelegate, GameCenterManagerDelegate, GameSceneDelegate, StartSceneDelegate, SKProductsRequestDelegate, MotionDataSource {
+class GameViewController: UIViewController, GKGameCenterControllerDelegate, GameCenterManagerDelegate, GameSceneDelegate, StartSceneDelegate/*, SKProductsRequestDelegate*/, MotionDataSource {
   // MARK: - Immutable vars
   let gameCenterManager = GameCenterManager()
   let gameData = GameData.dataFromArchive()
@@ -12,7 +12,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
 
   // MARK: - Vars
   private var products: [SKProduct]?
-  private var removeAdsProduct: SKProduct?
+  //private var removeAdsProduct: SKProduct?
 
     
   // MARK: - Computed vars
@@ -234,7 +234,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
   }
   
   // MARK: - IAP
-  func presentStoreActionSheet() {
+  /*func presentStoreActionSheet() {
     if let removeAdsProduct = removeAdsProduct {
       let actionController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
       let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
@@ -257,17 +257,17 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
     
       presentViewController(actionController, animated: true, completion: nil)
     }
-  }
+  }*/
   
-  func requestProducts() {
+  /*func requestProducts() {
     let productIdentifiers = Set([ProductIdentifier.RemoveAds])
     let request = SKProductsRequest(productIdentifiers: productIdentifiers)
     
-    request.delegate = self
+    //request.delegate = self
     request.start()
-  }
+  }*/
   
-  func purchaseProduct(product: SKProduct) {
+  /*func purchaseProduct(product: SKProduct) {
     let payment = SKPayment(product: product)
     let paymentQueue = SKPaymentQueue.defaultQueue()
     
@@ -278,7 +278,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
     let paymentQueue = SKPaymentQueue.defaultQueue()
     
     paymentQueue.restoreCompletedTransactions()
-  }
+  }*/
   
   // MARK: - Sound
   func playMusicIfNeeded() {
@@ -475,22 +475,22 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
     presentLeaderboard()
   }
   
-  func startSceneDidRequestStore(stareScene: StartScene) {
+  /*func startSceneDidRequestStore(stareScene: StartScene) {
     LoadingIndicatorView.sharedView.showInView(view)
 
     requestProducts()
-  }
+  }*/
   
-  func startSceneDidRequestToggleSound(startScene: StartScene, withButton button: SpriteButtonNode) {
+  /*func startSceneDidRequestToggleSound(startScene: StartScene, withButton button: SpriteButtonNode) {
     toggleSoundForScene(startScene, withButton: button)
-  }
+  }*/
 
   func startSceneDidRequestToggleMusic(startScene: StartScene, withButton button: SpriteButtonNode) {
     toggleMusicForScene(startScene, withButton: button)
   }
   
   // MARK: - SKProductsRequestDelegate
-  func productsRequest(request: SKProductsRequest, didReceiveResponse response: SKProductsResponse) {
+  /*func productsRequest(request: SKProductsRequest, didReceiveResponse response: SKProductsResponse) {
     products = response.products
     
     if let products = products {
@@ -508,7 +508,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
 
     // Present products
     presentStoreActionSheet()
-  }
+  }*/
     
   override func viewWillLayoutSubviews() {
 
