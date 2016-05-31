@@ -50,12 +50,12 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
     observeMotion()
     
     // Notification
-    let notificationCenter = NSNotificationCenter.defaultCenter()
+    /*let notificationCenter = NSNotificationCenter.defaultCenter()
     notificationCenter.addObserver(self, selector:#selector(GameViewController.paymentTransactionDidComplete(_:)) , name: PaymentTransactionDidRestoreNotification, object: nil)
     notificationCenter.addObserver(self, selector:#selector(GameViewController.paymentTransactionDidRestore(_:)) , name: PaymentTransactionDidRestoreNotification, object: nil)
     notificationCenter.addObserver(self, selector:#selector(GameViewController.paymentTransactionDidFail(_:)) , name: PaymentTransactionDidRestoreNotification, object: nil)
     notificationCenter.addObserver(self, selector:#selector(UIApplicationDelegate.applicationWillResignActive(_:)), name: UIApplicationWillResignActiveNotification, object: nil)
-    notificationCenter.addObserver(self, selector: #selector(UIApplicationDelegate.applicationDidBecomeActive(_:)), name: UIApplicationDidBecomeActiveNotification, object: nil)
+    notificationCenter.addObserver(self, selector: #selector(UIApplicationDelegate.applicationDidBecomeActive(_:)), name: UIApplicationDidBecomeActiveNotification, object: nil)*/
   }
   
   override func viewWillDisappear(animated: Bool) {
@@ -342,7 +342,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
     SKTAudio.sharedInstance().resumeBackgroundMusic()
   }
 
-  func paymentTransactionDidComplete(notification: NSNotification) {
+  /*func paymentTransactionDidComplete(notification: NSNotification) {
     restoreViewFromTransaction()
   }
   
@@ -358,7 +358,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate, Game
     LoadingIndicatorView.sharedView.dismiss()
     
     skView.paused = false
-  }
+  }*/
   
   // MARK: - GKGameCenterControllerDelegate
   func gameCenterViewControllerDidFinish(gameCenterViewController: GKGameCenterViewController) {

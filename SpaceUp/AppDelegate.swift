@@ -6,7 +6,7 @@ import AVFoundation
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-  let paymentTransactionObserver = PaymentTransactionObserver()
+  //let paymentTransactionObserver = PaymentTransactionObserver()
 
   var window: UIWindow?
   var viewController: UIViewController?
@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }*/
     
     // Payment transaction
-    let queue = SKPaymentQueue.defaultQueue()
-    queue.addTransactionObserver(paymentTransactionObserver)
+    //let queue = SKPaymentQueue.defaultQueue()
+    //queue.addTransactionObserver(paymentTransactionObserver)
 
     return true
   }

@@ -55,12 +55,9 @@ struct TextureFileName {
     static let CometStar3 = "CometStar3"
     static let CometStarGlow3 = "CometStarGlow3"
 
-    static let ButtonAd = "BtnAd"
     static let ButtonLeaderboard = "BtnLeaderboard"
     static let ButtonMusic = "BtnMusic"
     static let ButtonMusicOff = "BtnMusicOff"
-    static let ButtonSound = "BtnSound"
-    static let ButtonSoundOff = "BtnSoundOff"
     static let ButtonPlay = "BtnPlay"
     static let ButtonPlayAgain = "BtnPlayAgain"
     static let ButtonHome = "BtnHome"

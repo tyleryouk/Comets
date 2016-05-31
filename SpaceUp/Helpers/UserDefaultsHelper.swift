@@ -13,8 +13,8 @@ func isMusicEnabled() -> Bool {
   return userDefaults.boolForKey(KeyForUserDefaults.MusicDisabled) != true
 }
 
-func isAdsEnabled() -> Bool {
+/*func isAdsEnabled() -> Bool {
   let userDefaults = NSUserDefaults.standardUserDefaults()
   
   return userDefaults.boolForKey(ProductIdentifier.RemoveAds) != true
-}
+}*/

@@ -16,7 +16,7 @@ class StartScene: SKScene, ButtonDelegate {
   // MARK: - Vars
   weak var startSceneDelegate: StartSceneDelegate?
   var backgroundPosition = CGPointZero
-  var storeView: StoreView?
+ // var storeView: StoreView?
   var textureAtlases: [SKTextureAtlas]?
   var textures: [SKTexture]?
   
@@ -71,11 +71,11 @@ class StartScene: SKScene, ButtonDelegate {
     updateLayout()
     
     // Notification
-    let notificationCenter = NSNotificationCenter.defaultCenter()
+    /*let notificationCenter = NSNotificationCenter.defaultCenter()
     
     notificationCenter.addObserver(self, selector:#selector(StartScene.paymentTransactionDidComplete(_:)), name: PaymentTransactionDidCompleteNotification, object: nil)
     
-    notificationCenter.addObserver(self, selector: #selector(StartScene.paymentTransactionDidRestore(_:)), name: PaymentTransactionDidRestoreNotification, object: nil)
+    notificationCenter.addObserver(self, selector: #selector(StartScene.paymentTransactionDidRestore(_:)), name: PaymentTransactionDidRestoreNotification, object: nil)*/
   }
   
   override func willMoveFromView(view: SKView) {
@@ -154,7 +154,7 @@ class StartScene: SKScene, ButtonDelegate {
   }
   
   // MARK: - Store
-  func presentStore() -> StoreView {
+  /*func presentStore() -> StoreView {
     let storeView = StoreView()
     
     storeView.closeButton.delegate = self
@@ -162,16 +162,16 @@ class StartScene: SKScene, ButtonDelegate {
     addChild(storeView)
     
     return storeView
-  }
+  }*/
   
   // MARK: - Notification
-  func paymentTransactionDidComplete(notification: NSNotification) {
+  /*func paymentTransactionDidComplete(notification: NSNotification) {
     updateLayout()
   }
   
   func paymentTransactionDidRestore(notification: NSNotification) {
     updateLayout()
-  }
+  }*/
   
   // MARK: - ButtonDelegate
   func touchBeganForButton(button: ButtonNode) {
@@ -192,11 +192,11 @@ class StartScene: SKScene, ButtonDelegate {
     //  startSceneDelegate?.startSceneDidRequestStore?(self)
       
     default:
-      if button == storeView?.closeButton {
+      /*if button == storeView?.closeButton {
         storeView?.disappear() {
           self.storeView?.removeFromParent()
         }
-      }
+      }*/
 
       break
     }
