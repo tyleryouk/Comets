@@ -327,7 +327,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, WorldDelegate, ButtonDelegat
     
     print("end game \(gameOverCount)");
     
-    if (gameOverCount%2 == 0)
+    if (gameOverCount%3 == 0)
     {
         
         showAdmobInterstitial()
